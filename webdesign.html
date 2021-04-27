@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,400;0,600;0,700;1,400&family=Pacifico&display=swap"
         rel="stylesheet">
@@ -49,7 +50,7 @@
     </nav>
     <!-- {/* banner */} -->
     <div class="d-flex align-items-center position-relative mw-100 h-100">
-        <img class="mw-100" alt="main_image" src="./image/box.png"></img>
+        <img class="mw-100" alt="main_image" src="./image/gbb.png"></img>
         <div class="d-flex flex-column align-items-start text-left position-absolute p-5 fstSec">
             <h1 class="text-8xl font-weight-bold">Web design</h1>
             <!-- <p class="text-l">I’m a multimedia and game development student.<br>and passionate about building usable,
@@ -58,68 +59,117 @@
     </div>
 
     <!-- card -->
-    <div class="row p-10" style="background-color: var(--c6);">
+    <!-- human -->
+    <!-- <div class="container"> -->
+    <div class="row p-10 bg-w text-g">
+        <img class="col-12 col-lg-6 px-5" src="./image/web/HUMAN/4 – 5.png" alt="Card image cap">
         <div class="col-12 col-lg-6 d-flex flex-column align-items-start  p-5">
-            <h1 class="text-3xl">how human begin</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ipsa sed non architecto tempora consecte
-            </p>
-            <button class="btn btn-primary btn-detail" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <h1 class="text-3xl" style="color: var(--dark);">how human begin</h1>
+            <p>เว็บไซต์เกี่ยวกับวิวัฒนาการของมนุษย์ ย้อนตั้งแต่ไป 443 ล้านปีก่อน
+                โดยในผู้เข้าชมเว็บได้เลือกเส้นทางวิวัฒนาการของตนเอง</p>
+            <button class="btn btn-detail" type="button" onclick="moreDetail()">
                 Details
             </button>
         </div>
-        <img class="col-12 col-lg-6 px-5" src="./image/box.png" alt="Card image cap">
+
     </div>
-    <div class="collapse box-detail p-5" id="collapseExample">
+    <div class="collapse box-detail p-5 bg-g text-w" id="1detail">
         <div class="col-12">
-            <p>url</p>
-                <a src="https://how-human-begin.netlify.app/"></a>
-            
-            <img src="./image/web/HUMAN/Web 1920 – 1.png">
+            <p class="text-w">เว็บไซต์นี้เป็นส่วนหนึ่งของวิชา Multimedia Programming 2020
+                โดยในโปรเจ็คนี้ได้รับหน้าที่ดีไซน์ จึงได้เลือกโทนและรูปแบบภาพที่ในเว็บไซต์
+                เลือกใช้รูปแบบเวกเตอร์เพื่อที่จะได้เข้าใจง่าย
+                และเนื่องจากในเว็บไซต์ใช้สื่อภาพอธิบายเป็นหลักทำใก้สามารถเข้าถึงผู้เข้าชมได้หลากหลาย <a class="text-w"
+                    href="https://how-human-begin.netlify.app/">(skip to website)</a></p>
+            <p class="text-w">Skills</p>
+            <div class="d-flex">
+                <img class="icon px-2 w-12" src="./image/experience.png"></img>
+                <img class="icon px-2 w-12"" src=" ./image/illustrator.png"></img>
+                <img class="icon px-2 w-12"" src=" ./image/photoshop.png"></img>
+            </div>
+            <br>
+            <div class="row">
+                <img class="col-12 col-sm-6 col-lg-3 py-1"
+                    src="./image/web/Blue and Orange Fun Science Class Education Presentation.png">
+                <img class="col-12 col-sm-6 col-lg-3 py-1" src="./image/web/HUMAN/4.png">
+                <img class="col-12 col-sm-6 col-lg-3 py-1" src="./image/web/HUMAN/4 – 2.png">
+            </div>
         </div>
     </div>
-
+    <!-- </div> -->
+    <!-- end human -->
+    <!-- spacex -->
+    <!-- <div class="container"> -->
     <div class="row p-10">
+        <img class="col-12 col-lg-6 px-5" src="./image/web/ROCKECT/Scroll Group 3.png" alt="Card image cap">
         <div class="col-12 col-lg-6 d-flex flex-column align-items-start  p-5">
-            <h1 class="text-3xl">how to become human</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ipsa sed non architecto tempora consecte
-            </p>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
-                aria-expanded="false" aria-controls="collapseExample">
-                Button with data-bs-target
+            <h1 class="text-3xl" style="color: var(--dark);">spaceX</h1>
+            <p>เว็บไซต์สเปซเอ็กซ์ บริษัทเอกชนทางด้านธุรกิจการขนส่งทางอวกาศ มีข้อมูลเบื้องต้นของบริษัท ข้อมูลยาน
+                และการปล่อยยาน</p>
+            <button class="btn btn-detail" type="button" onclick="moreDetail2()">
+                Details
             </button>
         </div>
-        <img class="col-12 col-lg-6 px-5" src="./image/box.png" alt="Card image cap">
+
     </div>
-    <div class="collapse" id="collapseExample">
-        <div class="col-12 px-5">
-            <hr>
-            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the
-            user activates the relevant trigger.
+    <div class="collapse box-detail p-5 bg-g text-w" id="2detail">
+        <div class="col-12">
+            <p class="text-w">เว็บไซต์นี้เป็นส่วนหนึ่งของวิชา Special Topics in Software Engineering 2 Full-stack
+                Web
+                Developer โดยใช้ข้อมูลของบริษัท spaceX<a class="text-w" href="https://nocgy.com/spacex/"> (skip to
+                    website)</a></p>
+            <p class="text-w">Skills</p>
+            <div class="d-flex">
+                <img class="icon px-2 w-12" src="./image/experience.png"></img>
+                <img class="icon px-2 w-12"" src=" ./image/css.png"></img>
+                <img class="icon px-2 w-12"" src=" ./image/react.svg"></img>
+            </div>
+            <br>
+            <div class="row">
+                <img class="col-12 col-sm-6 col-lg-3 py-1" src="./image/web/ROCKECT/HOME.png">
+                <img class="col-12 col-sm-6 col-lg-3 py-1" src="./image/web/ROCKECT/Launche – 3.png">
+                <img class="col-12 col-sm-6 col-lg-3 py-1" src="./image/web/ROCKECT/Launche – detail.png">
+                <img class="col-12 col-sm-6 col-lg-3 py-1" src="./image/web/ROCKECT/ROCKETS – 1.png">
+                <img class="col-12 col-sm-6 col-lg-3 py-1" src="./image/web/ROCKECT/ROCKETS.png">
+            </div>
         </div>
     </div>
-
-    <div class="row p-10">
+    <!-- </div> -->
+    <!-- end spacex -->
+    <!-- ecom -->
+    <!-- <div class="container"> -->
+    <div class="row p-10 bg-w text-g">
+        <img class="col-12 col-lg-6 px-5" src="./image/web/E-COM//Scroll Group 4.png" alt="Card image cap">
         <div class="col-12 col-lg-6 d-flex flex-column align-items-start  p-5">
-            <h1 class="text-3xl">how to become human</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ipsa sed non architecto tempora consecte
-            </p>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
-                aria-expanded="false" aria-controls="collapseExample">
-                Button with data-bs-target
+            <h1 class="text-3xl" style="color: var(--dark);">e-commerce</h1>
+            <p>เว็บไซต์ขายของออนไลน์</p>
+            <button class="btn btn-detail" type="button" onclick="moreDetail6()">
+                Details
             </button>
         </div>
-        <img class="col-12 col-lg-6 px-5" src="./image/box.png" alt="Card image cap">
+
     </div>
-    <div class="collapse" id="collapseExample">
-        <div class="col-12 px-5">
-            <hr>
-            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the
-            user activates the relevant trigger.
+    <div class="collapse box-detail p-5 bg-g text-w" id="6detail">
+        <div class="col-12">
+            <p class="text-w">เว็บไซต์นี้เป็นส่วนหนึ่งของวิชา Special Topics in Software Engineering 2 Full-stack
+                Web</p>
+            <p class="text-w">Skills</p>
+            <div class="d-flex">
+                <img class="icon px-2 w-12" src="./image/experience.png"></img>
+                <img class="icon px-2 w-12"" src=" ./image/css.png"></img>
+                <img class="icon px-2 w-12"" src=" ./image/react.svg"></img>
+            </div>
+            <br>
+            <div class="row">
+                <img class="col-12 col-sm-6 col-lg-3 py-1" src="./image/web/E-COM/login - form.png">
+                <img class="col-12 col-sm-6 col-lg-3 py-1" src="./image/web/E-COM/login.png">
+                <img class="col-12 col-sm-6 col-lg-3 py-1" src="./image/web/E-COM/order list - all.png">
+                <img class="col-12 col-sm-6 col-lg-3 py-1" src="./image/web/E-COM/order list - delivery.png">
+            </div>
         </div>
     </div>
+    <!-- </div> -->
+    <!-- end ecom-->
 
 </body>
-
 
 </html>

@@ -3,6 +3,7 @@
 
 <head>
   <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,400;0,600;0,700;1,400&family=Pacifico&display=swap"
     rel="stylesheet">
@@ -48,13 +49,119 @@
   </nav>
   <!-- {/* banner */} -->
   <div class="d-flex align-items-center position-relative mw-100 h-100">
-    <img class="mw-100" alt="main_image" src="./image/box.png"></img>
+    <img class="mw-100" alt="main_image" src="./image/gb.png"></img>
     <div class="d-flex flex-column align-items-start text-left position-absolute p-5 fstSec">
-      <h1 class="text-5xl font-weight-bold">Siriporn <br> Jongjit</h1>
-      <p class="text-l">I’m a multimedia and game development student.<br>and passionate about building usable,
-        visually captivating multimedia.</p>
+      <h1 class="text-5xl font-weight-bold">Animation<br>and Model</h1>
+      <!-- <p class="text-l">I’m a multimedia and game development student.<br>and passionate about building usable,
+        visually captivating multimedia.</p> -->
     </div>
   </div>
+
+  <!-- card -->
+  <!-- car -->
+  <!-- <div class="container"> -->
+  <div class="row p-10 bg-w text-g">
+    <img class="col-12 col-lg-6 px-5" src="./image/ani/test1.jpg" alt="Card image cap">
+    <div class="col-12 col-lg-6 d-flex flex-column align-items-start  p-5">
+      <h1 class="text-3xl" style="color: var(--dark);">fluffy car</h1>
+      <p>ออกแบบโมเดลที่เป็นยานพาหนะ และท่าทาง 3 ท่า</p>
+      <button class="btn btn-detail" type="button" onclick="moreDetail()">
+        Details
+      </button>
+    </div>
+
+  </div>
+  <div class="collapse box-detail p-5 bg-g text-w" id="1detail">
+    <div class="col-12">
+      <p class="text-w">โมเดลรถส่งความสดใส สามารถบินได้ เปลี่ยนกระจกเป็นระเบิดความสุข และปืนยิงความสดใส <a
+          href="https://youtu.be/rFYTCrOEqVQ">(skip to video)</a></p>
+      <p class="text-w">Skills</p>
+      <div class="d-flex">
+        <img class="icon px-2 w-12"" src=" ./image/4abf5146283e1609eeeae16335666564.png"></img>
+        <img class="icon px-2 w-12"" src=" ./image/premier.png"></img>
+        <img class="icon px-2 w-12"" src=" ./image/photoshop.png"></img>
+      </div>
+      <br>
+      <div class="row">
+        <img class="col-12 col-sm-6 col-lg-3 py-1" src="./image/ani/test1.jpg">
+        <img class="col-12 col-sm-6 col-lg-3 py-1" src="./image/ani/rig_PJ1.jpg">
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+  <!-- end car -->
+  <!-- showreel -->
+  <!-- <div class="container"> -->
+  <div class="row p-10">
+    <img class="col-12 col-lg-6 px-5" src="./image/ani/banana2.png" alt="Card image cap">
+    <div class="col-12 col-lg-6 d-flex flex-column align-items-start  p-5">
+      <h1 class="text-3xl" style="color: var(--dark);">showreel 2020</h1>
+      <p>ผลงานในช่วงปลายปี 2019 ถึงต้นปี 2020</p>
+      <button class="btn btn-detail" type="button" onclick="moreDetail2()">
+        Details
+      </button>
+    </div>
+
+  </div>
+  <div class="collapse box-detail p-5 bg-g text-w" id="2detail">
+    <div class="col-12">
+      <p class="text-w">รวมโมเดล จัดแสง สี พื้นผิวต่างๆ<a class="text-w" href="https://youtu.be/DewO2xl1bn4">(skip to
+          video)</a></p>
+      <p class="text-w">Skills</p>
+      <div class="d-flex">
+        <img class="icon px-2 w-12" src="./image/4abf5146283e1609eeeae16335666564.png"></img>
+        <img class="icon px-2 w-12"" src=" ./image/premier.png"></img>
+      </div>
+      <br>
+      <div class="row">
+        <img class="col-12 col-sm-6 col-lg-3 py-1" src="./image/ani/banana.png">
+        <img class="col-12 col-sm-6 col-lg-3 py-1" src="./image/ani/alu.png">
+        <img class="col-12 col-sm-6 col-lg-3 py-1" src="./image/ani/banana.png">
+        <img class="col-12 col-sm-6 col-lg-3 py-1" src="./image/ani/blue.png">
+        <img class="col-12 col-sm-6 col-lg-3 py-1" src="./image/ani/book.png">
+        <img class="col-12 col-sm-6 col-lg-3 py-1" src="./image/ani/61070243_150.png">
+        <img class="col-12 col-sm-6 col-lg-3 py-1" src="./image/ani/box.png">
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+  <!-- end showreel -->
+  <!-- covid -->
+  <!-- <div class="container"> -->
+  <div class="row p-10 bg-w text-g">
+    <img class="col-12 col-lg-6 px-5" src="./image/ani/lift_473.png" alt="Card image cap">
+    <div class="col-12 col-lg-6 d-flex flex-column align-items-start  p-5">
+      <h1 class="text-3xl" style="color: var(--dark);">what's in my bag</h1>
+      <p>อนิแมชันเกี่ยวกับของใช้ที่จำเป็นต้องติดตัวออกจากบ้านในช่วงโควิด-19</p>
+      <button class="btn btn-detail" type="button" onclick="moreDetail3()">
+        Details
+      </button>
+    </div>
+
+  </div>
+  <div class="collapse box-detail p-5 bg-g text-w" id="3detail">
+    <div class="col-12">
+      <p class="text-w">สร้างเรื่องราวและอนิเมชันที่มีเนื้อหาเกี่ยวกับโควิด-19 <a href="https://youtu.be/aQejfON0Nbk">(skip to video)</a></p>
+      <p class="text-w">Skills</p>
+      <div class="d-flex">
+        <img class="icon px-2 w-12" src="./image/4abf5146283e1609eeeae16335666564.png"></img>
+        <img class="icon px-2 w-12"" src=" ./image/premier.png"></img>
+
+      </div>
+      <br>
+      <div class="row">
+        <img class="col-12 col-sm-6 col-lg-3 py-1" src="./image/ani/storyboard/1.png">
+        <img class="col-12 col-sm-6 col-lg-3 py-1" src="./image/ani/storyboard/2.png">
+        <img class="col-12 col-sm-6 col-lg-3 py-1" src="./image/ani/storyboard/3.png">
+        <img class="col-12 col-sm-6 col-lg-3 py-1" src="./image/ani/storyboard/4.png">
+        <img class="col-12 col-sm-6 col-lg-3 py-1" src="./image/ani/storyboard/5.png">
+        <img class="col-12 col-sm-6 col-lg-3 py-1" src="./image/ani/storyboard/6.png">
+
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+  <!-- end covid-->
 </body>
 
 </html>

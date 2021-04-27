@@ -38,8 +38,8 @@ nav{
 }
 
 p.text-l.main-des {
-  color: #fefbf6 !important;
-  text-shadow: 1.5px 1.5px #e6ddd8;
+  color:#fefbf6 !important;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
 }
 
 .skill{
@@ -54,6 +54,13 @@ p.text-l.main-des {
   margin-bottom: 0.5rem !important;
 }
 
+.card-body{
+  background-color: #144239 !important;
+}
+.card-text{
+  color: var(--white) !important; 
+}
+
 .btn-detail{
   background-color: #fefbf6 !important;
   color: #144239 !important;
@@ -61,25 +68,40 @@ p.text-l.main-des {
   border: #fefbf6 !important;
 }
 
-.btn-primary:focus {
+.btn:focus {
   color: #144239 !important;
   background-color: #f9f5e9 !important;
   border-color:  #f9f5e9 !important;
-  box-shadow: 0 0 0 0.25rem rgba(254 251 246 50%) !important;}
+  box-shadow: 0 0 0 0.05rem #144239 !important;}
 
-.btn-primary:hover {
+.btn:hover {
     color: #144239 !important;
     background-color: #e6ddd8 !important;
     border-color:  #e6ddd8 !important;
     box-shadow: 0 0 0 0.25rem rgba(254 251 246 50%) !important;}
 
-.box-detail{
-  color: #144239 !important;
-  background-color: #fefbf6 !important;
+.bg-w{
+  background-color: var(--white) !important;
 }
+.bg-g{
+  background-color: #144239 !important;
+}
+.text-w{
+  color: var(--white) !important;
+}
+.text-g{
+  color: #144239 !important;
+}
+p.text-w{
+  color: var(--white) !important;
+}
+
+
+
 
 body{
   background-color: var(--white);
+  overflow-x: hidden;
 }
 
 h2,h3,h4,h6,a,li,p{
@@ -90,7 +112,7 @@ h2,h3,h4,h6,a,li,p{
 
 h1,h5{
   font-family: 'Pacifico', cursive;
-  color: var(--c3);
+  color: var(--white);
 }
 
 -----------------------------------
@@ -219,13 +241,6 @@ line-height: 1;}
 .card {
   margin: auto;
   max-width: 300px;
-}
-
-footer {
-  font-weight: 400;
-  color: white;
-  padding: 20px 0px;
-  text-align: center;
 }
 
 @media only screen and (min-width: 600px) {
