@@ -1,55 +1,26 @@
-function moreDetail() {
-    var x = document.getElementById("1detail");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
+function toggleContact() {
+    var boxI = document.getElementById("contactIcon");
+    var label = document.getElementById("contactButton");
+
+    if (boxI.style.display === "block") {
+        boxI.style.display = "none";
+        console.log('ihide')
+        label.style.display = "block"
+      } else {
+        boxI.style.display = "block";
+        console.log('ishow') 
+        label.style.display = "none"
+      }
+
 }
-function moreDetail2() {
-    var x = document.getElementById("2detail");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
+
+function changeHMB1() {
+  document.getElementById("how-human-begin").style.backgroundImage = "url('./image/web/how-human-begin2.gif')";
 }
-function moreDetail3() {
-    var x = document.getElementById("3detail");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
+function changeHMB2() {
+  document.getElementById("how-human-begin").style.backgroundImage = "url('./image/web/mood.png')";
 }
-function moreDetail4() {
-    var x = document.getElementById("4detail");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
+function changeHMB3() {
+  document.getElementById("how-human-begin").style.backgroundImage = "url('./image/web/xd-hbg.jpg')";
 }
-function moreDetail5() {
-    var x = document.getElementById("5detail");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-function moreDetail6() {
-    var x = document.getElementById("6detail");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-function toggle_visibility(id) {
-       var e = document.getElementById(id);
-       if(e.style.display == 'block')
-          e.style.display = 'none';
-       else
-          e.style.display = 'block';
-    }
+

@@ -1,219 +1,732 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
-    <link rel="stylesheet" href="./style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,400;0,600;0,700;1,400&family=Pacifico&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="script.js"></script>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="icon" href="./image/72ppi/logo.png" type="image/x-icon">
 
-    <title>aprilfool's portfolio</title>
-
+    <title>aprilfoolk's Portfolio</title>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-sm-top">
-        <div class="container-fluid d-flex">
-            <a class="navbar-brand" href="index.html"><img src="./image/72ppi/logo.png" width="50" alt="logo_Nav"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-                aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item ">
-                        <a class="nav-link" aria-current="page" href="webdesign.html">Web design</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="graphicdesign.html">Graphic design</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="animationandmodel.html">Animation & Model</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="activity.html">Activity</a>
-                    </li>
+    <div class="mb-8">
+        <!-- nav -->
+        <div class="grid grid-cols-2 px-4 md:px-16 lg:px-32 max-h-16">
+            <div>
+                <a href="#section1"><img class="fixed max-h-10 m-4" src="./image/w-logo.png"></a>
+            </div>
+            <div class="flex flex-wrap justify-end">
+                <button class="fixed m-4 text-white fahkwang uppercase z-40 text-shadow" onclick="toggleContact()"
+                    id="contactButton">contact</button>
+                <!-- <div><button class="fixed m-4 text-white fahkwang uppercase z-40 text-shadow" onclick="toggleContact()"
+                        id="contactButton">menu</button></div> -->
+                <div class="fixed hidden m-4 text-white fahkwang text-2xl" id="contactIcon">
+                    <a href="https://mail.google.com/mail/u/0/?fs=1&to=srp.kwan@gmail.com&su=Interested your work💖&body=write+here&bcc&tf=cm"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-envelope pr-2 text-red-400"></i></a>
+                    <a href="tel:080-552-2984"><i class="fas fa-phone-square pr-2 text-yellow-400"></i></a>
+                    <a href="https://line.me/ti/p/ytVd2rZcyX" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-line pr-2 text-green-400"></i></a>
+                    <a href="https://www.facebook.com/srpkwan" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-square pr-2 text-blue-400"></i></a>
+                    <!-- <a href="https://www.instagram.com/aprilfoolk/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram pr-2 text-purple-400"></i></a> -->
+                    <i class="fas fa-times text-white text-shadow cursor-pointer" onclick="toggleContact()"
+                        id="close"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- end nav -->
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-32 max-h-full text-white px-4 md:px-16 lg:px-32">
+            <!-- section 1-->
+            <div id='section1'>
+                <a href="#section1"><img class="w-full" src="./image/IMG_1177.JPG"></a>
+            </div>
+            <div class="py-4 lg:py-32">
+                <h1 class="text-5xl md:text-7xl font-bold fahkwang pb-2 lg:pb-6">aprilfoolk's</h1>
+                <h1 class="text-5xl md:text-7xl font-bold uppercase fahkwang pb-2 lg:pb-6">portfolio</h1>
+                <p class="text-xl maledpan pb-6">Now I'm multimedia and game development ITKMITL student (Senior Year)
+                    and interested
+                    creating meaningful experiences through design.</p>
+                <div class="hidden md:block"><hr class="pb-6">
+                </hr></div>
+                <span
+                    class="inline-block rounded-full px-6 py-1 font-bold mr-2 mb-2 maledpan bg-yellow text-white">Creating</span>
+                <span
+                    class="inline-block rounded-full px-6 py-1 font-bold mr-2 mb-2 maledpan bg-orange text-white">Organizational</span>
+                <span
+                    class="inline-block rounded-full px-6 py-1 font-bold mr-2 mb-2 maledpan bg-pink text-white">Teamwork</span>
+                <div class="flex flex-col items-center text-center pt-10 lg:pt-40">
+                    <img class="w-12 max-h-12 animate-bounce" src="./image/w-logo.png">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 pt-2 animate-bounce" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M16 17l-4 4m0 0l-4-4m4 4V3" />
+                    </svg>
+                </div>
+            </div>
+            <!-- end section 1 -->
+
+            <!-- section 2 -->
+            <div class="py-24 lg:py-40" id="section2" data-aos="fade-up" data-aos-duration="3000">
+                <h4 class="text-3xl fahkwang">Hi, I'm SIRIPORN JONGJIT<br>
+                    Kwan is my nickname<br>
+                    and April fools day is my birthday!
+                </h4>
+                <h5 class="text-2xl fahkwang pt-10">Education</h5>
+
+                <!-- <div class="line"> -->
+                <ul class="list-disc">
+                    <li class="text-sm"><b>Faculty of Information Technology</b> <br>
+                        (King Mongkut's Institute of Technology Ladkrabang)<br>
+                        Multimedia And Game Development Mayor (GPA : 3.06)</li>
+                    <li class="text-sm">Bodindecha (Sing Singhaseni) 2 School<br>
+                        Sci-Math Program (GPA : 3.63)</li>
+                </ul>
+                <!-- </div> -->
+                <h5 class="text-2xl fahkwang pt-10">Activity</h5>
+                <ul class="list-disc">
+                    <li class="text-sm">One Day Diractor - TobeIT 2019</li>
+                    <li class="text-sm">Coordinator - Unite Camp 2019</li>
+                    <li class="text-sm">IT volunteer camp 2019 - 2020</li>
                 </ul>
             </div>
-        </div>
-    </nav>
-    <!-- {/* about me */} -->
-    <div class="d-flex align-items-center position-relative mw-100 h-100">
-        <img class="mw-100" alt="main_image" src="./image/aboutme-g.png"></img>
-        <div class="d-flex flex-column align-items-start text-left position-absolute px-5 fstSec">
-            <h1 class="text-7xl font-weight-bold">Siriporn <br> Jongjit</h1>
-            <p class="text-l main-des">I’m a multimedia and game development student.<br>and focused oncreating
-                meaningful experiences through design.</p>
-            <div class="d-flex">
-                <a href="https://www.facebook.com/srpkwan"><img class="icon px-2 w-12" src="./image/facebook-brands.png"
-                        alt="facebook"></img></a>
-                <a href="https://www.instagram.com/aprilfoolk/"><img class="icon px-2 w-12"" src="
-                        ./image/instagram-brands.png" alt="instagram"></img></a>
-                <a href="https://www.pinterest.com/srpkwan/"><img class="icon px-2 w-12"" src="
-                        ./image/pinterest-brands.png" alt="pinterest"></img></a>
-                <p class="text-w">080-5522984</p>
+            <div class="py-8 lg:py-40" data-aos="slide-up" data-aos-duration="3000">
+                <h2 class="text-3xl lg:text-5xl fahkwang">Software & Computer Language Skill</h2>
+                <div class="grid grid-cols-4 mt-2">
+                    <img src="https://img.icons8.com/color/96/000000/adobe-photoshop--v1.png" />
+                    <img src="https://img.icons8.com/color/96/000000/adobe-illustrator--v1.png" />
+                    <img src="https://img.icons8.com/color/96/000000/adobe-premiere-pro--v1.png" />
+                    <img src="https://img.icons8.com/color/96/000000/adobe-xd--v1.png" />
+                    <img src="https://img.icons8.com/color/96/000000/css3.png"/>
+                    <img src="https://img.icons8.com/color/96/000000/html-5--v1.png"/>
+                   
+                    <img src="https://img.icons8.com/color/96/000000/react-native.png"/>
+                    <img src="https://img.icons8.com/color/96/000000/autodesk-maya.png" />
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="96" height="96" viewBox="0 0 172 172"
+                        style=" fill:#000000;">
+                        <defs>
+                            <linearGradient x1="86" y1="16.125" x2="86" y2="155.875" gradientUnits="userSpaceOnUse"
+                                id="color-1_69503_gr1">
+                                <stop offset="0" stop-color="#1a6dff"></stop>
+                                <stop offset="1" stop-color="#c822ff"></stop>
+                            </linearGradient>
+                            <linearGradient x1="83.39313" y1="43" x2="83.39313" y2="129" gradientUnits="userSpaceOnUse"
+                                id="color-2_69503_gr2">
+                                <stop offset="0" stop-color="#8ab4ff"></stop>
+                                <stop offset="1" stop-color="#e492ff"></stop>
+                            </linearGradient>
+                        </defs>
+                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="none" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <path d="M0,172v-172h172v172z" fill="none" stroke="none" stroke-width="1"></path>
+                            <g>
+                                <path
+                                    d="M86,18.8125c-37.10663,0 -67.1875,30.08087 -67.1875,67.1875c0,37.10663 30.08087,67.1875 67.1875,67.1875c37.10663,0 67.1875,-30.08087 67.1875,-67.1875c0,-37.10663 -30.08087,-67.1875 -67.1875,-67.1875z"
+                                    fill="none" stroke="url(#color-1)" stroke-width="5.375"></path>
+                                <path
+                                    d="M35.27344,96.75c-2.58269,-21.41131 23.78706,-48.20837 46.62544,-53.75c0,0 -9.33638,6.58169 -9.33638,12.16094c0,11.16387 5.29706,7.37719 5.29706,7.37719c0,0 0.10481,40.27488 0.10481,43.15319c0,2.87831 2.64719,4.49619 6.35594,4.49619c3.70875,0 12.42969,-4.70312 12.42969,-4.70312c0,0 0,-31.98931 0,-35.94531c0,-3.956 -4.41825,-7.58412 -6.55213,-9.44656c5.70556,0 8.299,1.98069 8.299,1.98069c0,0 7.40675,-9.79056 26.65731,-14.93444c-2.924,3.79206 -12.27919,15.28381 -12.27919,18.705c0,3.42119 0,36.98806 0,38.96875c0,1.98069 2.28169,2.6875 3.69531,2.6875c1.41363,0 7.8045,-1.85706 15.11719,-10.07812c0,2.49938 -9.761,19.12963 -24.53956,28.87988l-9.72606,-8.05175l-10.04856,10.75c0,0 -24.88894,-1.34375 -33.62331,-16.125c2.59881,0.39238 8.0625,1.45125 8.0625,-2.6875c0,-4.13875 0,-30.89281 0,-33.59375c0,-2.70094 -1.40019,-4.03125 -3.69531,-4.03125c-2.29512,0.00269 -10.42213,1.84094 -22.84375,24.1875z"
+                                    fill="url(#color-2_69503_gr2)" stroke="none" stroke-width="1"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
             </div>
-            
-        </div>
-    </div>
-  <!-- Carousel -->
-  <div id="multi" class="carousel slide">
-    <ol class="carousel-indicators">
-        <li class="active" data-bs-target="#multi" data-bs-slide-to="0"></li>
-        <li class="" data-bs-target="#multi" data-bs-slide-to="1"></li>
-        <li class="" data-bs-target="#multi" data-bs-slide-to="2"></li>
-        <li class="" data-bs-target="#multi" data-bs-slide-to="3"></li>
-    </ol>
+            <!-- end section 2 -->
+            <!-- section 3 -->
+            <div class="col-span-1 lg:col-span-2">
+                <h2 class="text-3xl lg:text-5xl fahkwang text-center pb-8 lg:pb-20">Let's to appreciate my work</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 text-black">
+                    <!-- web design -->
+                    <!-- web design 1 -->
+                    <div class="col-span-1 bg-white">
+                        <div class="border-b-2 border-black px-6 py-2">
+                            <h4 class="text-xl lg:text-3xl fahkwang text-orange font-bold">web design</h4>
+                        </div>
+                        <h2 class="text-3xl lg:text-5xl fahkwang capitalize px-6 py-4 font-bold">How human begin</h2>
+                        <!-- <img src="./image/web/how-human-begin2.gif" class="px-6"> -->
+                        <div class="py-2 px-6">
+                            <div class="flex flex-wrap">
+                                <div class="hidden md:block md:w-3/4">
+                                    <div class="h-full w-full bg-cover bg-center"
+                                        style="background-image: url('./image/web/how-human-begin2.gif')"
+                                        id="how-human-begin"></div>
+                                </div>
+                                <div class="md:w-1/4 h-auto pl-2">
+                                    <div class="pb-4 cursor-pointer"><img src="./image/web/how-human-begin2.gif"
+                                            alt="how-human-begin-1" onclick="changeHMB1()"></div>
+                                    <div class=pb-4 cursor-pointer"><img src="./image/web/mood.png"
+                                            alt="how-human-begin-2" onclick="changeHMB2()"></div>
+                                    <div class="cursor-pointer"><img src="./image/web/xd-hbg.jpg"
+                                            alt="how-human-begin-3" onclick="changeHMB3()"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 
+                        <iframe width="620" height="320" class="px-6"
+                            src="https://www.youtube.com/embed/zbvSieQdNpY?list=LL" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe> -->
+                        <p class="px-6 py-3">โปรเจคนี้เป็นส่วนหนึ่งของวิชา Multimedia Programming 2020
+                            มีการออกแบบและนำเสนอตามวัตถุประสงค์โปรเจ็คที่ว่า <i>ปัญญาเหลือคณานัป
+                                คือขุมทรัพย์มหาศาล</i> ให้นำเสนอความองค์รู้ผ่านเว็บไซต์ให้เข้าใจและเข้าถึงได้ง่าย
+                            <b>กว่าจะเป็นมนุษย์!</b> เว็บไซต์เกี่ยวกับวิวัฒนาการของมนุษย์ ย้อนไป 443 ล้านปีก่อน
+                            ผู้เข้าชมเว็บไวต์จะได้เลือกเส้นทางวิวัฒนาการของตนเอง
+                            ในโปรเจ็คนี้ได้ โดยเลือกใช้รูปแบบเวกเตอร์เพื่อให้เข้าใจได้ง่าย
+                            และเหมาะกับกลุ่มเป้าใหม่ที่มีช่วงอายุตั้งแต่ 7 ปีขึ้นไป
+                        </p>
+                        <div class="px-8">
+                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp;UX/UI
+                                design, Graphic design</span><br>
+                            <i class="fas fa-link text-gray-400">&nbsp;</i>
+                            <a class="text-blue hover:text-black hover:underline"
+                                href="https://how-human-begin.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                website - how human begin</a>
+                        </div>
+                        <hr class="mx-6 mt-3">
+                        <!-- <h5 class="px-6 pt-4 font-bold uppercase fahkwang">skill</h5> -->
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Creating</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Teamwork</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">Adobe
+                                XD</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">Procreacte</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">Photoshop</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">Illustrator</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-700 text-white lowercase">#UX/UI</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#graphic</span>
 
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img class="d-block w-100" src="./image/gbb.png" alt="">
-            <div class="carousel-caption d-none d-md-block">
-                <a href="webdesign.html"><h5 style="z-index: 5;">Web design</h5></a>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="./image/go.png" alt="">
-            <div class="carousel-caption d-none d-md-block">
-                <a href="graphicdesign.html"><h5>Graphic design</h5></a>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="./image/gb.png" alt="">
-            <div class="carousel-caption d-none d-md-block">
-                <a href="animationandmodel.html"><h5>Animation and Model</h5></a>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="./image/gp.png" alt="">
-            <div class="carousel-caption d-none d-md-block">
-                <a href="activity.html"><h5>Activity</h5></a>
-            </div>
-        </div>
-    </div>
-    <!-- skill -->
-    <div class="container-fluid row p-10 skill">
-        <div class="col-12 text-center">
-            <h2 class="text-center text-3xl pacif">Skills</h2>
-            <br>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-3">
-            <div class="card style=" width: 15rem;">
-                <img class="card-img-top p-3" src="./image/html.png" alt="Card image cap">
-                <div class="card-body" style="background-color: var(--c1);">
-                    <p class="card-text text-center">Hypertext Markup Language</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-3">
-            <div class="card style=" width: 15rem;">
-                <img class="card-img-top p-3" src="./image/css.png" alt="Card image cap">
-                <div class="card-body" style="background-color: var(--c2);">
-                    <p class="card-text text-center">Cascading Style Sheets</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-3">
-            <div class="card style=" width: 15rem;">
-                <img class="card-img-top p-3" src="./image/react.svg" alt="Card image cap">
-                <div class="card-body" style="background-color: var(--c6);">
-                    <p class="card-text text-center">React</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-3">
-            <div class="card style=" width: 15rem;">
-                <img class="card-img-top p-3" src="./image/experience.png" alt="Card image cap">
-                <div class="card-body" style="background-color: var(--c3);">
-                    <p class="card-text text-center">Adobe Experience Design</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-3">
-            <div class="card style=" width: 15rem;">
-                <img class="card-img-top p-3" src="./image/illustrator.png" alt="Card image cap">
-                <div class="card-body" style="background-color: var(--c1);">
-                    <p class="card-text text-center">Adobe Illustrator</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-3">
-            <div class="card style=" width: 15rem;">
-                <img class="card-img-top p-3" src="./image/photoshop.png" alt="Card image cap">
-                <div class="card-body" style="background-color: var(--c2);">
-                    <p class="card-text text-center">Adobe Photoshop</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-3">
-            <div class="card style=" width: 15rem;">
-                <img class="card-img-top p-3" src="./image/premier.png" alt="Card image cap">
-                <div class="card-body" style="background-color: var(--c3);">
-                    <p class="card-text text-center">Adobe Premiere Pro</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-3">
-            <div class="card style=" width: 15rem;">
-                <img class="card-img-top p-3" src="./image/4abf5146283e1609eeeae16335666564.png" alt="Card image cap">
-                <div class="card-body" style="background-color: var(--c4);">
-                    <p class="card-text text-center">Autodesk Maya</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-3">
-            <div class="card style=" width: 15rem;">
-                <img class="card-img-top p-3" src="./image/unreal-engine.png" alt="Card image cap">
-                <div class="card-body" style="background-color: var(--c1);">
-                    <p class="card-text text-center">Unreal Engine</p>
-                </div>
-            </div>
-        </div>
-    </div>
-      <!-- <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="./image/gbb.png" alt="">
-                <div class="carousel-caption d-none d-md-block">
-                    <a href="webdesign.html"><h5 style="z-index: 5;">Web design</h5></a>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="./image/go.png" alt="">
-                <div class="carousel-caption d-none d-md-block">
-                    <a href="graphicdesign.html"><h5>Graphic design</h5></a>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="./image/gb.png" alt="">
-                <div class="carousel-caption d-none d-md-block">
-                    <a href="animationandmodel.html"><h5>Animation and Model</h5></a>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="./image/gp.png" alt="">
-                <div class="carousel-caption d-none d-md-block">
-                    <a href="activity.html"><h5>Activity</h5></a>
-                </div>
-            </div>
-        </div> -->
-  
+                        </div>
 
+                    </div>
+                    <!-- end web design 1 -->
+                    <!-- web design 2 -->
+                    <div class="col-span-1 bg-white">
+                        <div class="border-b-2 border-black px-6 py-2">
+                            <h4 class="text-xl lg:text-3xl fahkwang text-orange font-bold">web design</h4>
+                        </div>
+                        <h2 class="text-3xl lg:text-5xl fahkwang capitalize px-6 py-4 font-bold">spaceX</h2>
+                        <!-- <div class="py-2 px-6">
+                            <div class="flex flex-wrap">
+                                <div class="hidden md:block md:w-3/4">
+                                    <div class="h-full w-full bg-cover bg-center"
+                                        style="background-image: url('./image/web/how-human-begin2.gif')"
+                                        id="how-human-begin"></div>
+                                </div>
+                                <div class="md:w-1/4 h-auto pl-2">
+                                    <div class="pb-4 cursor-pointer"><img src="./image/web/how-human-begin2.gif"
+                                            alt="how-human-begin-1" onclick="changeHMB1()"></div>
+                                    <div class=pb-4 cursor-pointer"><img src="./image/web/mood.png"
+                                            alt="how-human-begin-2" onclick="changeHMB2()"></div>
+                                    <div class="cursor-pointer"><img src="./image/web/xd-hbg.jpg"
+                                            alt="how-human-begin-3" onclick="changeHMB3()"></div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <img src="./image/web/E-COM/Adobe XD 12_6_2564 18_06_50.png" class="px-6">
+                        <p class="px-6 py-3">โปรเจคระยะสั้น 1 สัปดาห์ เป็นส่วนหนึ่งของวิชา Full-stack Web Developer 2021
+                            โดยใช้ข้อมูลของบริษัท SpaceX ข้อมูลเบื้องต้นของบริษัท ข้อมูลยาน และการปล่อยยาน<br>
+                        </p>
+                        <div class="px-8">
+                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp;UX/UI
+                                design, Front-end developer</span><br>
+                            <!-- <i class="fas fa-link text-gray-400">&nbsp;</i>
+                            <a class=" text-gray-400" href="https://nocgy.com/spacex/"
+                                target="_blank" rel="noopener noreferrer"> website - spacex</a> -->
+                        </div>
+                        <hr class="mx-6 mt-3">
+                        <!-- <h5 class="px-6 pt-4 font-bold uppercase fahkwang">skill</h5> -->
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Creating</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Teamwork</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">Adobe
+                                XD</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">HTML</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-700 text-white lowercase">CSS</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-400 text-white lowercase">react</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-700 text-white lowercase">#UX/UI</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#front-end</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#coding</span>
+
+                        </div>
+                        <!-- <iframe class="px-6 pb-6" width="620" height="340"
+                            src="https://www.youtube.com/embed/aQejfON0Nbk" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe> -->
+                    </div>
+                    <!-- end web design 2 -->
+                    <!-- web design 3 -->
+                    <div class="col-span-1 bg-white">
+                        <div class="border-b-2 border-black px-6 py-2">
+                            <h4 class="text-xl lg:text-3xl fahkwang text-orange font-bold">web design</h4>
+                        </div>
+                        <h2 class="text-3xl lg:text-5xl fahkwang capitalize px-6 py-4 font-bold">khaoyai through time</h2>
+                        <img src="./image/web/khao2.gif" class="px-6">
+                        <p class="px-6 py-3">โปรเจคนี้เป็นส่วนหนึ่งของวิชา Multimedia Programming 2020
+                            ที่ได้ทำงานร่วมกับนักศึกษาจากนิเทศศิลป์ คณะสถาปัตยกรรมศาสร์
+                            จากหัวข้อการนำเสนอเป้าหมายการพัฒนาที่ยั่งยืน เป้าหมายที่ 15 ปกป้อง ฟื้นฟู
+                            และสนับสนุนการใช้ระบบนิเวศบนบกอย่างยั่งยืน
+                            จึงเลือกการนำเสนอวิธีการท่องเที่ยวเชิงอนุรักษ์ที่อุทยานแห่งชาติเขาใหญ่
+                            และมีกิจกรรมเล็กๆในเว็บไซต์ด้วย
+                        </p>
+                        <div class="px-8">
+                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp;Front-end
+                                developer</span><br>
+                            <i class="fas fa-link text-gray-400">&nbsp;</i>
+                            <a class="text-blue hover:text-black hover:underline"
+                                href="https://khaoyai-through-time.netlify.app/" target="_blank"
+                                rel="noopener noreferrer"> website - khaoyai through time</a>
+                        </div>
+                        <hr class="mx-6 mt-3">
+                        <!-- <h5 class="px-6 pt-4 font-bold uppercase fahkwang">skill</h5> -->
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block rounded-full px-4 py-1 mr-2 mb-2 maledpan bg-black text-white lowercase">Teamwork</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1 mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">HTML</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1 mr-2 mb-2 maledpan bg-gray-700 text-white lowercase">CSS</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1 mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#front-end</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1 mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#coding</span>
+
+                        </div>
+                        <!-- <iframe class="px-6 pb-6" width="620" height="340"
+                            src="https://www.youtube.com/embed/aQejfON0Nbk" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe> -->
+                    </div>
+                    <!-- end web design 3 -->
+                    <!-- web design 4 -->
+                    <div class="col-span-1 bg-white">
+                        <div class="border-b-2 border-black px-6 py-2">
+                            <h4 class="text-xl lg:text-3xl fahkwang text-orange font-bold">web design</h4>
+                        </div>
+                        <h2 class="text-3xl lg:text-5xl fahkwang capitalize px-6 py-4 font-bold">Marketry</h2>
+                        <img src="./image/web/E-COM/Adobe XD 12_6_2564 18_09_16.png" class="px-6">
+                        <p class="px-6 py-3">โปรเจคระยะสั้น 2 สัปดาห์ เป็นส่วนหนึ่งของวิชา Full-stack Web Developer 2021
+                            ในการพัฒนาเว็บแอป E-commerce
+                        </p>
+                        <div class="px-8">
+                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp;UX/UI
+                                design, Front-end
+                                developer</span><br>
+                            <!-- <i class="fas fa-link text-gray-400">&nbsp;</i>
+                            <a class="text-red-500 font-bold underline hover:text-black hover:underline"
+                                href="https://khaoyai-through-time.netlify.app/" target="_blank"
+                                rel="noopener noreferrer"> website - หาลิ้งไม่เจอ</a> -->
+                        </div>
+                        <hr class="mx-6 mt-3">
+                        <!-- <h5 class="px-6 pt-4 font-bold uppercase fahkwang">skill</h5> -->
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Creating</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Teamwork</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">Adobe
+                                XD</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">HTML</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-700 text-white lowercase">CSS</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-400 text-white lowercase">react</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-700 text-white lowercase">#UX/UI</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#front-end</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#coding</span>
+
+                        </div>
+                        <!-- <iframe class="px-6 pb-6" width="620" height="340"
+                            src="https://www.youtube.com/embed/aQejfON0Nbk" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe> -->
+                    </div>
+                    <!-- end web design 4 -->
+                    <!-- web design 5 -->
+                    <div class="col-span-1 bg-white">
+                        <div class="border-b-2 border-black px-6 py-2">
+                            <h4 class="text-xl lg:text-3xl fahkwang text-orange font-bold">web design</h4>
+                        </div>
+                        <h2 class="text-3xl lg:text-5xl fahkwang capitalize px-6 py-4 font-bold">kiddi</h2>
+                        <img src="./image/web/kiddi.gif" class="px-6">
+                        <p class="px-6 py-3">โปรเจคนี้เป็นส่วนหนึ่งของวิชา Web design and development 2021
+                            ที่ให้เลือกผลิตภัณฑ์หรือบริการสําหรับนํามาจัดทําเป็นเว็บไซต์
+                            ศึกษาคู่แข่งและสร้างความแตกต่างให้กับเว็บไซต์ที่เลือกพัฒนา
+                            โดย E-commerce
+                            นี้แตกต่างจากเว็บไซต์อื่นในส่วนของฟังก์ชั่นการจับคู่ชิ้นส่วนบนและล่างให้เข้ากับสีผิว
+
+                        </p>
+                        <div class="px-8">
+                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp;UX/UI
+                                design, Front-end
+                                developer</span><br>
+                            <i class="fas fa-link text-gray-400">&nbsp;</i>
+                            <a class="text-blue  hover:underline hover:text-black hover:underline"
+                                href="http://phpstack-381645-1909627.cloudwaysapps.com/" target="_blank"
+                                rel="noopener noreferrer"> website - kiddi</a>
+                        </div>
+                        <hr class="mx-6 mt-3">
+                        <!-- <h5 class="px-6 pt-4 font-bold uppercase fahkwang">skill</h5> -->
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Creating</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Teamwork</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">Adobe
+                                XD</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">HTML</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-700 text-white lowercase">CSS</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-700 text-white lowercase">#UX/UI</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#front-end</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#coding</span>
+
+                        </div>
+                        <!-- <iframe class="px-6 pb-6" width="620" height="340"
+                            src="https://www.youtube.com/embed/aQejfON0Nbk" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe> -->
+                    </div>
+                    <!-- end web design 5 -->
+                    <!-- end web design -->
+
+                    <!-- graphic design -->
+                    <!-- graphic design 1 -->
+                    <div class="col-span-1 bg-white">
+                        <div class="border-b-2 border-black px-6 py-2">
+                            <h4 class="text-3xl fahkwang text-pink font-bold">graphic design</h4>
+                        </div>
+                        <h2 class="text-3xl lg:text-5xl fahkwang capitalize px-6 py-4 font-bold">T-rex</h2>
+                        <div class="py-2 px-6">
+                            <div class="flex flex-wrap">
+                                <div class="hidden md:block md:w-3/4">
+                                    <div class="h-full w-full bg-cover bg-center"
+                                        style="background-image: url('./image/graphic/final_61070243-1.jpg')"
+                                        id="how-human-begin"></div>
+                                </div>
+                                <div class="md:w-1/4 h-auto pl-2">
+                                    <div class="pb-4 cursor-pointer"><img src="././image/graphic/head_243.jpg"
+                                            alt="how-human-begin-1" onclick="changeHMB1()"></div>
+                                    <div class=pb-4 cursor-pointer"><img src="./image/graphic/final_61070243-1.jpg"
+                                            alt="how-human-begin-2" onclick="changeHMB2()"></div>
+                                    <div class="cursor-pointer"><img src="./image/graphic/final_61070243-2.jpg"
+                                            alt="how-human-begin-3" onclick="changeHMB3()"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="px-6 py-3">โปรเจคนี้เป็นส่วนหนึ่งของวิชา Graphics Design Principles 2020
+                            ภายใต้ข้อกำหนดการออกแบบโลโก้จากโดยใช้ตัวอักษรของชื่อเรื่องที่นำเสนอ และออกแบบโปสเตอร์ 2
+                            แบบโดยใช้ระบบกริดในการออกแบบ
+
+                        </p>
+                        <div class="px-8">
+                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp;Poster
+                                design, Typographic design</span><br>
+                            <!-- <i class="fas fa-link text-gray-400">&nbsp;</i>
+                                <a class="text-red-500 font-bold underline hover:text-black hover:underline"
+                                    href="https://khaoyai-through-time.netlify.app/" target="_blank"
+                                    rel="noopener noreferrer"> website - หาลิ้งไม่เจอ</a> -->
+                        </div>
+                        <hr class="mx-6 mt-3">
+                        <!-- <h5 class="px-6 pt-4 font-bold uppercase fahkwang">skill</h5> -->
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Creating</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">Illustrator</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#graphic</span>
+                        </div>
+                        <!-- <iframe class="px-6 pb-6" width="620" height="340"
+                            src="https://www.youtube.com/embed/aQejfON0Nbk" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe> -->
+                    </div>
+                    <!-- end graphic design 1 -->
+                    <!-- graphic design 2 -->
+                    <div class="col-span-1 bg-white">
+                        <div class="border-b-2 border-black px-6 py-2">
+                            <h4 class="text-3xl fahkwang text-pink font-bold">graphic design <span
+                                    class="text-3xl fahkwang text-black font-bold">&nbsp;&&nbsp;</span>
+                                <span class="text-3xl fahkwang text-yellow font-bold">video editor</span>
+                            </h4>
+                        </div>
+                        <h2 class="text-3xl lg:text-5xl fahkwang capitalize px-6 py-4 font-bold">fairy topia</h2>
+                        <iframe class="px-6" width="620" height="340" width="967" height="544"
+                            src="https://www.youtube.com/embed/794CeWZ1Xc0" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <p class="px-6 py-3">ออกแบบโปสเตอร์และวิดีโอสำหรับนำเสนอ
+                            การสร้างแลนด์สเคปแลนด์สเคปบนเกาะที่มีทะเลสาบในฤดูร้อน
+                            Fairytopia ได้แรงบันดาลใจมาจากแอนิเมชันเรื่องบาร์บี้ ในตอน บาร์บี้
+                            นางฟ้าในโลกแห่งความฝัน และนางฟ้าบาร์บี้ในดินแดนใต้สมุทร
+                            เป็นเกาะที่มีพืชพรรณธรรมชาติที่สวยงาม อุดมสมบูรณ์ และเหนือจินตนาการ
+                            ทำให้เกิดโปรเจคนี้ขึ้น พื้นที่ในเกาะที่อุดมสมบูรณ์ อากาศแจ่มใส่ ในช่วงฤดูร้อน
+                            ภายในเกาะมีทะเลสาบ พืชพันธุ์ ดอกไม้นานาชนิด
+                        </p>
+                        <div class="px-8">
+                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp;Poster
+                                design, Video editor</span><br>
+                            <i class="fas fa-link text-gray-400">&nbsp;</i>
+                            <a class="text-blue hover:text-black hover:underline"
+                                href="https://drive.google.com/file/d/1MED-7IhC9Dbty2F0Il5bE4B8HPb8e6an/view?usp=sharing"
+                                target="_blank" rel="noopener noreferrer"> document - fairy topia</a>
+                        </div>
+                        <hr class="mx-6 mt-3">
+                        <!-- <h5 class="px-6 pt-4 font-bold uppercase fahkwang">skill</h5> -->
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Creating</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">Photoshop</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">premiere
+                                pro</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#graphic</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#video</span>
+
+                        </div>
+
+                        <div class="px-3"><img src="./image/graphic/Fairy topia!.png"></div>
+                    </div>
+                    <!-- end graphic design 2 -->
+                    <!-- graphic design 3 -->
+                    <div class="col-span-1 bg-white">
+                        <div class="border-b-2 border-black px-6 py-2">
+                            <h4 class="text-3xl fahkwang text-pink font-bold">graphic design <span
+                                    class="text-3xl fahkwang text-black font-bold">&nbsp;&&nbsp;</span>
+                                <span class="text-3xl fahkwang text-yellow font-bold">video editor</span>
+                            </h4>
+                        </div>
+                        <h2 class="text-3xl lg:text-5xl fahkwang capitalize px-6 py-4 font-bold">This City Won't Be Lonely Anymore
+                        </h2>
+                        <video class="px-6" width="620" height="340"  controls>
+                            <source src="./image/61070243_VideoDemo.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                          </video>
+                        <!-- <iframe class="px-6" width="620" height="340" width="967" height="544"
+                            src="https://www.youtube.com/embed/794CeWZ1Xc0" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe> -->
+                        <p class="px-6 py-3">ออกแบบโปสเตอร์และวิดีโอสำหรับนำเสนอ
+                            การพัฒนา VFX ที่ออกแบบขึ้นเป็นนิทรรศการไฟที่มีชื่อว่า This City Won't Be Lonely Anymore
+                            ได้รับแรงบันดาลใจมาจากงานเปิดตัวอัลบั้มแรกของวง Three Man Down
+                            โดยนิทรรศการในเรื่องถูกจัดขึ้นที่โรงงานปลากระป๋อง และจากชื่อนิทรรศการจึงเป็นที่มาของ VFX
+                            หลัก “Heart Attact” ในงานมีการแสดงโชว์สุดพิเศษของนักแสดงชื่อดัง “Shinbi”
+                        </p>
+                        <div class="px-8">
+                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp;Poster
+                                design, Video editor</span><br>
+                            <i class="fas fa-link text-gray-400">&nbsp;</i>
+                            <a class="text-blue hover:text-black hover:underline lowercase"
+                                href="https://docs.google.com/document/d/1bgp2WIfEVHmLZKI-TqX3gd7l_ciZVDMTYY7v0z0xK80/edit?usp=sharing"
+                                target="_blank" rel="noopener noreferrer"> document - This City Won't Be Lonely
+                                Anymore</a>
+                        </div>
+                        <hr class="mx-6 mt-3">
+                        <!-- <h5 class="px-6 pt-4 font-bold uppercase fahkwang">skill</h5> -->
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Creating</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">Photoshop</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">premiere
+                                pro</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#graphic</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#video</span>
+                        </div>
+
+                        <div class="px-3"><img src="./image/graphic/tcwbla.png"></div>
+                    </div>
+                    <!-- end graphic design 3 -->
+                    <!-- end graphic design -->
+                    <!-- start model video -->
+
+                    <!-- start model video 1 -->
+                    <!-- graphic design 3 -->
+                    <div class="col-span-1 bg-white">
+                        <div class="border-b-2 border-black px-6 py-2">
+                            <h4 class="text-3xl fahkwang text-yellow font-bold">video editor & model
+                            </h4>
+                        </div>
+                        <h2 class="text-3xl lg:text-5xl fahkwang capitalize px-6 py-4 font-bold">Model showreel 2019
+                        </h2>
+                        <iframe class="px-6 pb-6" width="620" height="340" width="967" height="544"
+                            src="https://www.youtube.com/embed/DewO2xl1bn4" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                        <div class="px-8">
+                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp;Modeler
+                                design, Video editor</span><br>
+
+                        </div>
+                        <hr class="mx-6 mt-3">
+                        <!-- <h5 class="px-6 pt-4 font-bold uppercase fahkwang">skill</h5> -->
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Creating</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">Maya</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">premiere
+                                pro</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#model</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#video</span>
+
+                        </div>
+                    </div>
+                    <!-- end model video 1 -->
+                    <!-- end model video -->
+                    <!-- end model video -->
+                    <!-- start model video 1 -->
+                    <!-- graphic design 3 -->
+                    <div class="col-span-1 bg-white">
+                        <div class="border-b-2 border-black px-6 py-2">
+                            <h4 class="text-3xl fahkwang text-yellow font-bold">video editor & model
+                            </h4>
+                        </div>
+                        <h2 class="text-3xl lg:text-5xl fahkwang capitalize px-6 py-4 font-bold">What's in my bag?</h2>
+                        <iframe class="px-6 pb-6" width="620" height="340" width="967" height="544"
+                            src="https://www.youtube.com/embed/aQejfON0Nbk" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                        <div class="px-8">
+                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp;Modeler
+                                design, Video editor</span><br>
+
+                        </div>
+                        <hr class="mx-6 mt-3">
+                        <!-- <h5 class="px-6 pt-4 font-bold uppercase fahkwang">skill</h5> -->
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Creating</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">Procreacte</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">Maya</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">premiere
+                                pro</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#model</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#video</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#graphic</span>
+
+
+                        </div>
+                    </div>
+                    <!-- end model video 1 -->
+                    <!-- end model video -->
+                    <!-- end model video -->
+                    <!-- start model video 1 -->
+                    <!-- graphic design 3 -->
+                    <div class="col-span-1 bg-white">
+                        <div class="border-b-2 border-black px-6 py-2">
+                            <h4 class="text-3xl fahkwang text-yellow font-bold">video editor & model
+                            </h4>
+                        </div>
+                        <h2 class="text-3xl lg:text-5xl fahkwang capitalize px-6 py-4 font-bold">4wheels, makes your heart goes boom
+                        </h2>
+                        <iframe class="px-6 pb-6" width="620" height="340" width="967" height="544"
+                            src="https://www.youtube.com/embed/rFYTCrOEqVQ" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <p class="px-6">ออกแบบยานพาหนะแลพสร้างท่าทางของยานพาหนะ 3 ท่าทาง
+                            ได้ออกแบบรถส่งความสุขที่มีปืนยิงด้านบนได้แรงบันดาลใจมาจากการยิงศรของคิวปิด
+                            มีล้อที่สามารถหมุนแล้ว ทำให้รถลอยและกระจกเป็นระเบิดวิเศษ ที่จะทำให้ผู้คนมีความสุขและรอยยิ้ม
+                        </p>
+                        <div class="px-8">
+                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp;Modeler,
+                                Video editor</span><br>
+
+                        </div>
+                        <hr class="mx-6 mt-3">
+                        <!-- <h5 class="px-6 pt-4 font-bold uppercase fahkwang">skill</h5> -->
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Creating</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">Maya</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">premiere
+                                pro</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#model</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#video</span>
+
+                        </div>
+
+                        <!-- <img class="px-6" src="./image/ani/test1.jpg">
+                        <img class="px-6" src="./image/ani/rig_PJ1.jpg"> -->
+                    </div>
+                    <!-- end model video 1 -->
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
 </body>
+<script>
+    AOS.init();
+</script>
 
 </html>
