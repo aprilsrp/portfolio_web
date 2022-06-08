@@ -23,28 +23,28 @@
 <body>
     <div class="">
         <!-- nav -->
-        <div class="grid grid-cols-2 px-4 md:px-16 lg:px-32 max-h-16">
-            <div>
+        <div class="grid grid-cols-2 px-4 md:px-16 lg:px-32 max-h-16 mynavbar">
+            <div id="section 1">
                 <a href="#section1"><img class="fixed max-h-10 m-4" src="./image/w-logo.png"></a>
             </div>
             <div class="flex flex-wrap justify-end">
-                <button class="fixed m-4 text-white fahkwang uppercase z-40 text-shadow" onclick="toggleContact()"
-                    id="contactButton">contact</button>
+                <!-- <button class="fixed m-4 text-white fahkwang uppercase z-40 text-shadow" onclick="toggleContact()"
+                    id="contactButton">contact</button> -->
                 <!-- <div><button class="fixed m-4 text-white fahkwang uppercase z-40 text-shadow" onclick="toggleContact()"
                         id="contactButton">menu</button></div> -->
-                <div class="fixed hidden m-4 text-white fahkwang text-2xl" id="contactIcon">
+                <div class="fixed m-4 text-white fahkwang text-2xl" id="contactIcon">
                     <a href="https://mail.google.com/mail/u/0/?fs=1&to=srp.kwan@gmail.com&su=thank for Interested. I will reply as soon as possible💖 - (Edit Subject)&body=write+here&bcc&tf=cm"
                         target="_blank" rel="noopener noreferrer">
-                        <i class="fas fa-envelope pr-2 text-red-400"></i></a>
-                    <a href="tel:080-552-2984"><i class="fas fa-phone-square pr-2 text-yellow-400"></i></a>
+                        <i class="fas fa-envelope pr-2 text-white cursor-pointer hover:text-pink"></i></a>
+                    <a href="tel:080-552-2984"><i class="fas fa-phone-square pr-2 text-white cursor-pointer hover:text-orange"></i></a>
                     <a href="https://line.me/ti/p/ytVd2rZcyX" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-line pr-2 text-green-400"></i></a>
+                        <i class="fab fa-line pr-2 text-white cursor-pointer hover:text-yellow"></i></a>
                     <a href="https://www.facebook.com/srpkwan" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-facebook-square pr-2 text-blue-400"></i></a>
+                        <i class="fab fa-facebook-square pr-2 text-white cursor-pointer hover:text-blue"></i></a>
                     <!-- <a href="https://www.instagram.com/aprilfoolk/" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-instagram pr-2 text-purple-400"></i></a> -->
-                    <i class="fas fa-times text-white text-shadow cursor-pointer" onclick="toggleContact()"
-                        id="close"></i>
+                    <!-- <i class="fas fa-times text-white text-shadow cursor-pointer" onclick="toggleContact()"
+                        id="close"></i> -->
                 </div>
             </div>
         </div>
@@ -56,26 +56,29 @@
             <div id='section1'>
                 <a href="#section1"><img class="w-full" src="./image/IMG_1177.JPG"></a>
             </div>
-            <div class="py-4 lg:py-32">
-                <h1 class="text-5xl md:text-7xl font-bold fahkwang pb-2 lg:pb-6">aprilfoolk's</h1>
-                <h1 class="text-5xl md:text-7xl font-bold uppercase fahkwang pb-2 lg:pb-6">portfolio</h1>
-                <p class="text-xl maledpan pb-6">Now I'm multimedia and game development ITKMITL student (Senior Year)
-                    and interested
+            <div class="py-2 lg:py-32">
+                <h1 class="text-3xl md:text-7xl font-bold fahkwang pb-2 lg:pb-6">aprilfoolk's</h1>
+                <h1 class="text-3xl md:text-7xl font-bold uppercase fahkwang pb-2 lg:pb-6">portfolio</h1>
+                <p class="text-xl maledpan pb-6">
+                    I'm interested
                     creating meaningful experiences through design.</p>
                 <div class="hidden md:block">
                     <hr class="pb-6">
                     </hr>
                 </div>
                 <span
-                    class="inline-block rounded-full px-6 py-1 font-bold mr-2 mb-2 maledpan bg-blue text-white">Eager to learn</span>
-                <span
-                    class="inline-block rounded-full px-6 py-1 font-bold mr-2 mb-2 maledpan bg-yellow text-white">Organizational</span>
-                <span
-                    class="inline-block rounded-full px-6 py-1 font-bold mr-2 mb-2 maledpan bg-orange text-white">Teamwork</span>
-                    <span
-                    class="inline-block rounded-full px-6 py-1 font-bold mr-2 mb-2 maledpan bg-pink text-white">Positive attitude
+                    class="inline-block rounded-full px-4 py-1 font-bold mr-1 mb-2 maledpan bg-pink text-white">Positive
+                    attitude
                     and open mind</span>
-                <div class="flex flex-col items-center text-center pt-10 lg:pt-40">
+                <span
+                    class="inline-block rounded-full px-4 py-1 font-bold mr-1 mb-2 maledpan bg-orange text-white">Teamwork</span>
+                    <span
+                    class="inline-block rounded-full px-4 py-1 font-bold mr-1 mb-2 maledpan bg-yellow text-white">Organizational</span>
+                <span class="inline-block rounded-full px-4 py-1 font-bold mr-1 mb-2 maledpan bg-blue text-white">Eager
+                    to learn</span>
+                
+                
+                <div class="flex flex-col items-center text-center pt-10 lg:pt-36">
                     <img class="w-12 max-h-12 animate-bounce" src="./image/w-logo.png">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 pt-2 animate-bounce" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor">
@@ -87,32 +90,34 @@
             <!-- end section 1 -->
 
             <!-- section 2 -->
-            <div class="py-24 lg:py-40" id="section2" data-aos="fade-up" data-aos-duration="3000">
-                <h4 class="text-3xl fahkwang">Hi, I'm SIRIPORN JONGJIT<br>
-                    Kwan is my nickname<br>
+            <div class="pt-24 lg:pt-40 pb-8 lg:pb-32" id="section2" data-aos="fade-up" data-aos-duration="3000">
+                <h4 class="text-3xl fahkwang">Hi, I'm <span class="text-pink">SIRIPORN JONGJIT</span><br>
+                    <span class="text-pink"> Kwan </span>is my nickname<br>
                     and April fools day is my birthday!
                 </h4>
-                <h5 class="text-2xl fahkwang pt-10">Education</h5>
+                <h5 class="text-2xl fahkwang pt-10 text-pink">Education</h5>
 
                 <!-- <div class="line"> -->
                 <ul class="list-disc">
                     <li class="text-sm"><b>Faculty of Information Technology</b> <br>
-                        (King Mongkut's Institute of Technology Ladkrabang)<br>
-                        Multimedia And Game Development Mayor (GPA : 3.06)</li>
-                    <li class="text-sm">Bodindecha (Sing Singhaseni) 2 School<br>
-                        Sci-Math Program (GPA : 3.63)</li>
+                        (Multimedia And Game Development Mayor) KMITL </li>
+                    <li class="text-sm">Bodindecha (Sing Singhaseni) 2 School
+                        (Sci-Math Program) </li>
                 </ul>
                 <!-- </div> -->
-                <h5 class="text-2xl fahkwang pt-10">Activity</h5>
+                <h5 class="text-2xl fahkwang pt-10 text-pink">Activity & Experience</h5>
                 <ul class="list-disc">
-                    <li class="text-sm">One Day Diractor - TobeIT 2019</li>
-                    <li class="text-sm">Coordinator - Unite Camp 2019</li>
-                    <li class="text-sm">IT volunteer camp 2019 - 2020</li>
+                    <li class="text-sm">2021 : INTERN at Sharp Interchange (Graphic Designer)</li>
+                    <li class="text-sm">2019-2020 : IT volunteer camp (Staff)</li>
+                    <li class="text-sm">2019 : Unite Camp 4 (Coordinator)</li>
+                    <li class="text-sm">2019 : TobeIT 62 (One Day Diractor) </li>
+
                 </ul>
             </div>
-            <div class="py-8 lg:py-40" data-aos="slide-up" data-aos-duration="3000">
-                <h2 class="text-3xl lg:text-5xl fahkwang">Software & Computer Language Skill</h2>
-                <div class="grid grid-cols-4 mt-2">
+            <div class="py-2 pb-4 lg:py-40" data-aos="slide-up" data-aos-duration="2000">
+                <div class="hidden lg:block space"></div>
+                <h2 class="text-2xl fahkwang text-pink">Skill</h2>
+                <div class="grid grid-cols-8 mt-2">
                     <img src="https://img.icons8.com/color/96/000000/adobe-photoshop--v1.png" />
                     <img src="https://img.icons8.com/color/96/000000/adobe-illustrator--v1.png" />
                     <img src="https://img.icons8.com/color/96/000000/adobe-premiere-pro--v1.png" />
@@ -120,59 +125,42 @@
                     <img src="https://img.icons8.com/color/96/000000/css3.png" />
                     <img src="https://img.icons8.com/color/96/000000/html-5--v1.png" />
                     <img src="https://img.icons8.com/color/96/000000/autodesk-maya.png" />
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="96" height="96" viewBox="0 0 172 172"
-                        style=" fill:#000000;">
-                        <defs>
-                            <linearGradient x1="86" y1="16.125" x2="86" y2="155.875" gradientUnits="userSpaceOnUse"
-                                id="color-1_69503_gr1">
-                                <stop offset="0" stop-color="#1a6dff"></stop>
-                                <stop offset="1" stop-color="#c822ff"></stop>
-                            </linearGradient>
-                            <linearGradient x1="83.39313" y1="43" x2="83.39313" y2="129" gradientUnits="userSpaceOnUse"
-                                id="color-2_69503_gr2">
-                                <stop offset="0" stop-color="#8ab4ff"></stop>
-                                <stop offset="1" stop-color="#e492ff"></stop>
-                            </linearGradient>
-                        </defs>
-                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="none" stroke-linecap="butt"
-                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                            style="mix-blend-mode: normal">
-                            <path d="M0,172v-172h172v172z" fill="none" stroke="none" stroke-width="1"></path>
-                            <g>
-                                <path
-                                    d="M86,18.8125c-37.10663,0 -67.1875,30.08087 -67.1875,67.1875c0,37.10663 30.08087,67.1875 67.1875,67.1875c37.10663,0 67.1875,-30.08087 67.1875,-67.1875c0,-37.10663 -30.08087,-67.1875 -67.1875,-67.1875z"
-                                    fill="none" stroke="url(#color-1)" stroke-width="5.375"></path>
-                                <path
-                                    d="M35.27344,96.75c-2.58269,-21.41131 23.78706,-48.20837 46.62544,-53.75c0,0 -9.33638,6.58169 -9.33638,12.16094c0,11.16387 5.29706,7.37719 5.29706,7.37719c0,0 0.10481,40.27488 0.10481,43.15319c0,2.87831 2.64719,4.49619 6.35594,4.49619c3.70875,0 12.42969,-4.70312 12.42969,-4.70312c0,0 0,-31.98931 0,-35.94531c0,-3.956 -4.41825,-7.58412 -6.55213,-9.44656c5.70556,0 8.299,1.98069 8.299,1.98069c0,0 7.40675,-9.79056 26.65731,-14.93444c-2.924,3.79206 -12.27919,15.28381 -12.27919,18.705c0,3.42119 0,36.98806 0,38.96875c0,1.98069 2.28169,2.6875 3.69531,2.6875c1.41363,0 7.8045,-1.85706 15.11719,-10.07812c0,2.49938 -9.761,19.12963 -24.53956,28.87988l-9.72606,-8.05175l-10.04856,10.75c0,0 -24.88894,-1.34375 -33.62331,-16.125c2.59881,0.39238 8.0625,1.45125 8.0625,-2.6875c0,-4.13875 0,-30.89281 0,-33.59375c0,-2.70094 -1.40019,-4.03125 -3.69531,-4.03125c-2.29512,0.00269 -10.42213,1.84094 -22.84375,24.1875z"
-                                    fill="url(#color-2_69503_gr2)" stroke="none" stroke-width="1"></path>
-                            </g>
-                        </g>
-                    </svg>
+                    <img src="https://img.icons8.com/color/96/undefined/figma--v1.png" />
                 </div>
+                <h5 class="text-2xl fahkwang pt-6 text-pink">Interested</h5>
+                <ul class="list-disc">
+                    <li class="text-sm">Education &nbsp;/&nbsp; Small Business &nbsp;/&nbsp; Cats &nbsp;/&nbsp; Tattoo
+                        &nbsp; /&nbsp; Nail Art</li>
+                </ul>
             </div>
+
             <!-- end section 2 -->
 
 
             <!-- section 3 -->
-            <div class="col-span-1 lg:col-span-2">
-                <h2 class="text-3xl lg:text-5xl fahkwang text-center pb-8 lg:pb-20">Let's to appreciate my work</h2>
+            <div class="col-span-1 lg:col-span-2 py-10">
+                
+                <div class="text-center pb-8 lg:pb-20">
+                    <h2 class="text-2xl lg:text-4xl fahkwang pb-4 lg:pb-10 ">Let's to appreciate my work</h2>
+                    <!-- <span onclick="showAll()" class="btn_all inline-block rounded-full px-6 py-2 font-bold mr-2 mb-2 maledpan bg-white text-black cursor-pointer">all</span>
+                    <span onclick="showGrap()" class="btn_graphic design inline-block rounded-full px-6 py-2 font-bold mr-2 mb-2 maledpan bg-pink text-black cursor-pointer">graphic design</span>
+                    <span onclick="showWeb()" class="btn_web inline-block rounded-full px-6 py-2 font-bold mr-2 mb-2 maledpan bg-orange text-black cursor-pointer">web design</span>
+                    <span onclick="showVideo()" class="btn_video editor inline-block rounded-full px-6 py-2 font-bold mr-2 mb-2 maledpan bg-yellow text-black cursor-pointer">video editor</span>
+                    <span onclick="showModel()" class="btn_model inline-block rounded-full px-6 py-2 font-bold mr-2 mb-2 maledpan bg-blue text-black cursor-pointer">model</span> -->
+                </div>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 text-black">
-                    
-
-
                     <!-- start model video -->
                     <!-- start model video 1 -->
-                    <div class="col-span-1 bg-white">
+                    <div class="video model col-span-1 bg-white">
                         <div class="border-b-2 border-black px-6 py-2">
                             <h4 class="text-3xl fahkwang text-yellow font-bold">video editor <span
-                                class="text-3xl fahkwang text-black font-bold">&nbsp;&&nbsp;</span>
-                            <span class="text-3xl fahkwang text-blue font-bold">model</span>
+                                    class="text-3xl fahkwang text-black font-bold">&nbsp;&&nbsp;</span>
+                                <span class="text-3xl fahkwang text-blue font-bold">model</span>
                             </h4>
                         </div>
-                        <h2 class="text-3xl lg:text-5xl fahkwang capitalize px-6 py-4 font-bold">Model showreel 2019
+                        <h2 class="text-2xl lg:text-4xl fahkwang capitalize px-6 py-4 font-bold">Model showreel 2019
                         </h2>
-                        <iframe class="px-6 pb-6" width="620" height="340"
+                        <iframe class="px-6 pb-6 w-full h-60 lg:h-80" 
                             src="https://www.youtube.com/embed/DewO2xl1bn4" title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
@@ -199,15 +187,15 @@
                     </div>
                     <!-- end model video 1 -->
                     <!-- start model video 2 -->
-                    <div class="col-span-1 bg-white">
+                    <div class="video model col-span-1 bg-white">
                         <div class="border-b-2 border-black px-6 py-2">
                             <h4 class="text-3xl fahkwang text-yellow font-bold">video editor<span
-                                class="text-3xl fahkwang text-black font-bold">&nbsp;&&nbsp;</span>
-                            <span class="text-3xl fahkwang text-blue font-bold">model</span>
+                                    class="text-3xl fahkwang text-black font-bold">&nbsp;&&nbsp;</span>
+                                <span class="text-3xl fahkwang text-blue font-bold">model</span>
                             </h4>
                         </div>
-                        <h2 class="text-3xl lg:text-5xl fahkwang capitalize px-6 py-4 font-bold">What's in my bag?</h2>
-                        <iframe class="px-6 pb-6" width="620" height="340"
+                        <h2 class="text-2xl lg:text-4xl fahkwang capitalize px-6 py-4 font-bold">What's in my bag?</h2>
+                        <iframe class="px-6 pb-6 w-full h-60 lg:h-80" 
                             src="https://www.youtube.com/embed/aQejfON0Nbk" title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
@@ -237,17 +225,17 @@
                     </div>
                     <!-- end model video 2 -->
                     <!-- start model video 3 -->
-                    <div class="col-span-1 bg-white">
+                    <div class="video model col-span-1 bg-white">
                         <div class="border-b-2 border-black px-6 py-2">
                             <h4 class="text-3xl fahkwang text-yellow font-bold">video editor<span
-                                class="text-3xl fahkwang text-black font-bold">&nbsp;&&nbsp;</span>
-                            <span class="text-3xl fahkwang text-blue font-bold">model</span>
+                                    class="text-3xl fahkwang text-black font-bold">&nbsp;&&nbsp;</span>
+                                <span class="text-3xl fahkwang text-blue font-bold">model</span>
                             </h4>
                         </div>
-                        <h2 class="text-3xl lg:text-5xl fahkwang capitalize px-6 py-4 font-bold">4wheels, makes your
+                        <h2 class="text-2xl lg:text-4xl fahkwang capitalize px-6 py-4 font-bold">4wheels, makes your
                             heart goes boom
                         </h2>
-                        <iframe class="px-6 pb-6" width="620" height="340"
+                        <iframe class="px-6 pb-6 w-full h-60 lg:h-80" 
                             src="https://www.youtube.com/embed/rFYTCrOEqVQ" title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
@@ -278,33 +266,131 @@
                     <!-- end model video 3 -->
                     <!-- end model video  -->
 
-
-                    
-                    
                     <!-- graphic design -->
-                     <!-- graphic design 2 -->
-                     <div class="col-span-1 bg-white">
+                    <!-- graphic design 3 -->
+                    <div class="grap col-span-1 bg-white">
                         <div class="border-b-2 border-black px-6 py-2">
-                            <h4 class="text-3xl fahkwang text-pink font-bold">graphic design
-                            </h4>
+                            <h4 class="text-3xl fahkwang text-pink font-bold">graphic design</h4>
                         </div>
-                        <h2 class="text-3xl lg:text-5xl fahkwang capitalize px-6 py-4 font-bold">isometric</h2>
-                        <div class="px-6"><img src="./image/graphic/sq-fb-isometic.png"></div>
-                        <!-- <p class="px-6 py-3">ออกแบบโปสเตอร์และวิดีโอสำหรับนำเสนอ
-                            การสร้างแลนด์สเคปแลนด์สเคปบนเกาะที่มีทะเลสาบในฤดูร้อน
-                            Fairytopia ได้แรงบันดาลใจมาจากแอนิเมชันเรื่องบาร์บี้ ในตอน บาร์บี้
-                            นางฟ้าในโลกแห่งความฝัน และนางฟ้าบาร์บี้ในดินแดนใต้สมุทร
-                            เป็นเกาะที่มีพืชพรรณธรรมชาติที่สวยงาม อุดมสมบูรณ์ และเหนือจินตนาการ
-                            ทำให้เกิดโปรเจคนี้ขึ้น พื้นที่ในเกาะที่อุดมสมบูรณ์ อากาศแจ่มใส่ ในช่วงฤดูร้อน
-                            ภายในเกาะมีทะเลสาบ พืชพันธุ์ ดอกไม้นานาชนิด
-                        </p> -->
+                        <h2 class="text-2xl lg:text-4xl fahkwang capitalize px-6 py-4 font-bold">Sharp Handbook</h2>
+
+                        <img src="./image/graphic/Sharp Handboook.png" class="px-6">
+                        
+
+                        <p class="px-6 py-3">ออกแบบคู่มือของโรงเรียนสอนภาษาอังกฤษ Sharp English School
+                            โดยใช้สีฟ้าที่เป็นสีประจำโรงเรียนในหาออกแบบ เป็นผลงานส่วนหนึ่งจากการเป็นนักศึกษาฝึกงาน
+
+                        </p>
                         <div class="px-8">
-                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp;illustration ,Graphic
-                                design</span><br>
-                            <!-- <i class="fas fa-link text-gray-400">&nbsp;</i>
-                            <a class="text-blue hover:text-black hover:underline"
-                                href="https://drive.google.com/file/d/1MED-7IhC9Dbty2F0Il5bE4B8HPb8e6an/view?usp=sharing"
-                                target="_blank" rel="noopener noreferrer"> document - fairy topia</a> -->
+                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp;Book
+                                design, Layout design</span><br>
+                            <i class="fas fa-link text-gray-400">&nbsp;</i>
+                            <a class="text-blue hover:text-black hover:underline" href="https://bit.ly/3zj8NFt"
+                                target="_blank" rel="noopener noreferrer"> Sharp Handbook</a>
+                        </div>
+                        <hr class="mx-6 mt-3">
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Creating</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Illustrator</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">Photoshop</span>
+
+                            <span
+                                class="inline-block rounded-full px-4 py-1  m   r-2 mb-2 maledpan bg-gray-500 text-white lowercase">#graphic</span>
+                        </div>
+
+                    </div>
+                    <!-- end graphic design 3 -->
+
+                    <!-- graphic design 4 -->
+                    <div class="grap col-span-1 bg-white">
+                        <div class="border-b-2 border-black px-6 py-2">
+                            <h4 class="text-3xl fahkwang text-pink font-bold">graphic design</h4>
+                        </div>
+                        <h2 class="text-2xl lg:text-4xl fahkwang capitalize px-6 py-4 font-bold">NYC Handbook</h2>
+
+                        <img src="./image/graphic/NYC Handbook.png" class="px-6">
+
+                        <p class="px-6 py-3">ออกแบบคู่มือการไปทัศนศึกษาของ Sharp Exchange
+                            ใช้สีชมพูซึ่งเป็นสีของแบรนด์มารวมกับการนำรถ Taxi
+                            สีเหลืองในเมืองนิวยอร์กมาเป็นธีมหลักของคู่มือเล่มนี้
+
+                        </p>
+                        <div class="px-8">
+                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp;Book
+                                design, Layout design, Vector design</span><br>
+                            <i class="fas fa-link text-gray-400">&nbsp;</i>
+                            <a class="text-blue hover:text-black hover:underline" href="https://bit.ly/3MqYke1"
+                                target="_blank" rel="noopener noreferrer"> NYC Handbook</a>
+                        </div>
+                        <hr class="mx-6 mt-3">
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Creating</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Illustrator</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">Photoshop</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  m   r-2 mb-2 maledpan bg-gray-500 text-white lowercase">#graphic</span>
+                        </div>
+
+                    </div>
+                    <!-- end graphic design 4 -->
+                    <!-- graphic design 5 -->
+                    <div class="grap col-span-1 bg-white">
+                        <div class="border-b-2 border-black px-6 py-2">
+                            <h4 class="text-3xl fahkwang text-pink font-bold">graphic design</h4>
+                        </div>
+                        <h2 class="text-2xl lg:text-4xl fahkwang capitalize px-6 py-4 font-bold">Welcome Pack</h2>
+
+                        <img src="./image/graphic/Welcome Pack.png" class="px-6">
+
+                        <p class="px-6 py-3">ออกแบบคู่มือสำหรับนักเรียนที่ไปเรียนต่อต่างประเทศกับ Sharp University
+                            เพื่อช่วยให้สามารถเข้าระบบการเรียน รู้ข้อมูลที่พัก และการเงิน
+
+                        </p>
+                        <div class="px-8">
+                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp;Book
+                                design, Layout design</span><br>
+                            <i class="fas fa-link text-gray-400">&nbsp;</i>
+                            <a class="text-blue hover:text-black hover:underline" href="https://bit.ly/3mqxEPY"
+                                target="_blank" rel="noopener noreferrer"> Welcome Pack</a>
+                        </div>
+                        <hr class="mx-6 mt-3">
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Creating</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Illustrator</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">Photoshop</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  m   r-2 mb-2 maledpan bg-gray-800 text-white lowercase">#graphic</span>
+                        </div>
+
+                    </div>
+                    <!-- end graphic design 5 -->
+                    <!-- graphic design 6 -->
+                    <div class="grap col-span-1 bg-white">
+                        <div class="border-b-2 border-black px-6 py-2">
+                            <h4 class="text-3xl fahkwang text-pink font-bold">graphic design</h4>
+                        </div>
+                        <h2 class="text-2xl lg:text-4xl fahkwang capitalize px-6 py-4 font-bold">Sharp Interchange
+                            Sticker</h2>
+
+                        <img src="./image/graphic/Sticker.png" class="px-6">
+
+                        <p class="px-6 py-3">สติ๊กเกอร์ของ Sharp Interchange
+                            ที่ปรึกษาด้านการศึกษาครบวงจรทั้งโรงเรียนสอนภาษาอังกฤษ จัดโครงการทัศนศึกษาที่ต่างประเทศ
+                            จัดหาคุณครูชาวต่างชาติ ให้คำปรึกษาการเรียนต่อต่างประเทศ การทำวีซ่า และโครงการ Work & Travel
+
+                        </p>
+                        <div class="px-8">
+                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp;Sticker,
+                                Banding, Vector design</span><br>
                         </div>
                         <hr class="mx-6 mt-3">
                         <!-- <h5 class="px-6 pt-4 font-bold uppercase fahkwang">skill</h5> -->
@@ -312,19 +398,269 @@
                             <span
                                 class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Creating</span>
                             <span
-                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">Illustrator</span>
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Illustrator</span>
+
                             <span
-                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#graphic</span>
+                                class="inline-block rounded-full px-4 py-1  m   r-2 mb-2 maledpan bg-gray-800 text-white lowercase">#graphic</span>
+                        </div>
+
+                    </div>
+                    <!-- end graphic design 6 -->
+                    <!-- graphic design 7 -->
+                    <div class="grap col-span-1 bg-white">
+                        <div class="border-b-2 border-black px-6 py-2">
+                            <h4 class="text-3xl fahkwang text-pink font-bold">graphic design</h4>
+                        </div>
+                        <h2 class="text-2xl lg:text-4xl fahkwang capitalize px-6 py-4 font-bold">Sharp Exchange Student
+                            2022</h2>
+
+                        <img src="./image/graphic/posterSocial.png" class="px-6">
+
+                        <p class="px-6 py-3">สติ๊กเกอร์ของ Sharp Interchange
+                            ที่ปรึกษาด้านการศึกษาครบวงจรทั้งโรงเรียนสอนภาษาอังกฤษ จัดโครงการทัศนศึกษาที่ต่างประเทศ
+                            จัดหาคุณครูชาวต่างชาติ ให้คำปรึกษาการเรียนต่อต่างประเทศ การทำวีซ่า และโครงการ Work & Travel
+
+                        </p>
+                        <div class="px-8">
+                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp;Poster
+                                Design, Social Media Post</span><br>
+                        </div>
+                        <hr class="mx-6 mt-3">
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Creating</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Illustrator</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">Photoshop</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  m   r-2 mb-2 maledpan bg-gray-800 text-white lowercase">#graphic</span>
+                        </div>
+
+                    </div>
+                    <!-- end graphic design 7 -->
+
+                    <!-- graphic design 8 -->
+                    <div class="grap col-span-1 bg-white">
+                        <div class="border-b-2 border-black px-6 py-2">
+                            <h4 class="text-3xl fahkwang text-pink font-bold">graphic design</h4>
+                        </div>
+                        <h2 class="text-2xl lg:text-4xl fahkwang capitalize px-6 py-4 font-bold">Social Media post set
+                        </h2>
+
+                        <img src="./image/graphic/Postset.png" class="px-6">
+
+                        <!-- <p class="px-6 py-3">สติ๊กเกอร์ของ Sharp Interchange ที่ปรึกษาด้านการศึกษาครบวงจรทั้งโรงเรียนสอนภาษาอังกฤษ จัดโครงการทัศนศึกษาที่ต่างประเทศ จัดหาคุณครูชาวต่างชาติ ให้คำปรึกษาการเรียนต่อต่างประเทศ การทำวีซ่า และโครงการ Work & Travel
+                        </p> -->
+
+                        <div class="px-8">
+                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp;Social
+                                Media Post</span><br>
+                        </div>
+                        <hr class="mx-6 mt-3">
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Creating</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Illustrator</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">Photoshop</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  m   r-2 mb-2 maledpan bg-gray-800 text-white lowercase">#graphic</span>
+                        </div>
+
+                    </div>
+                    <!-- end graphic design 8 -->
+
+                    <!-- graphic design 9 -->
+                    <div class="grap col-span-1 bg-white">
+                        <div class="border-b-2 border-black px-6 py-2">
+                            <h4 class="text-3xl fahkwang text-pink font-bold">graphic design</h4>
+                        </div>
+                        <h2 class="text-2xl lg:text-4xl fahkwang capitalize px-6 py-4 font-bold">Social Media post</h2>
+
+                        <img src="./image/graphic/socialPost.png" class="px-6">
+
+                        <!-- <p class="px-6 py-3">สติ๊กเกอร์ของ Sharp Interchange ที่ปรึกษาด้านการศึกษาครบวงจรทั้งโรงเรียนสอนภาษาอังกฤษ จัดโครงการทัศนศึกษาที่ต่างประเทศ จัดหาคุณครูชาวต่างชาติ ให้คำปรึกษาการเรียนต่อต่างประเทศ การทำวีซ่า และโครงการ Work & Travel
+                        </p> -->
+
+                        <div class="px-8">
+                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp;Social
+                                Media Post</span><br>
+                        </div>
+                        <hr class="mx-6 mt-3">
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Creating</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Illustrator</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">Photoshop</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  m   r-2 mb-2 maledpan bg-gray-800 text-white lowercase">#graphic</span>
+                        </div>
+
+                    </div>
+                    <!-- end graphic design 9 -->
+
+                    <!-- graphic design 10 -->
+                    <div class="grap col-span-1 bg-white">
+                        <div class="border-b-2 border-black px-6 py-2">
+                            <h4 class="text-3xl fahkwang text-pink font-bold">graphic design</h4>
+                        </div>
+                        <h2 class="text-2xl lg:text-4xl fahkwang capitalize px-6 py-4 font-bold">Sharp Exchange SIES
+                        </h2>
+
+                        <img src="./image/graphic/SharpExchangeSIES.png" class="px-6">
+
+                        <!-- <p class="px-6 py-3">สติ๊กเกอร์ของ Sharp Interchange ที่ปรึกษาด้านการศึกษาครบวงจรทั้งโรงเรียนสอนภาษาอังกฤษ จัดโครงการทัศนศึกษาที่ต่างประเทศ จัดหาคุณครูชาวต่างชาติ ให้คำปรึกษาการเรียนต่อต่างประเทศ การทำวีซ่า และโครงการ Work & Travel
+                        </p> -->
+
+                        <div class="px-8">
+                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp;Social
+                                Media Post</span><br>
+                        </div>
+                        <hr class="mx-6 mt-3">
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Creating</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Illustrator</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">Photoshop</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  m   r-2 mb-2 maledpan bg-gray-800 text-white lowercase">#graphic</span>
+                        </div>
+
+                    </div>
+                    <!-- end graphic design 10 -->
+
+                    <!-- graphic design 11 -->
+                    <div class="grap col-span-1 bg-white">
+                        <div class="border-b-2 border-black px-6 py-2">
+                            <h4 class="text-3xl fahkwang text-pink font-bold">graphic design</h4>
+                        </div>
+                        <h2 class="text-2xl lg:text-4xl fahkwang capitalize px-6 py-4 font-bold">Weekly Social Media
+                            Post</h2>
+
+                        <img src="./image/graphic/weeklyPost.png" class="px-6">
+
+                        <!-- <p class="px-6 py-3">สติ๊กเกอร์ของ Sharp Interchange ที่ปรึกษาด้านการศึกษาครบวงจรทั้งโรงเรียนสอนภาษาอังกฤษ จัดโครงการทัศนศึกษาที่ต่างประเทศ จัดหาคุณครูชาวต่างชาติ ให้คำปรึกษาการเรียนต่อต่างประเทศ การทำวีซ่า และโครงการ Work & Travel
+                        </p> -->
+
+                        <div class="px-8">
+                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp;Social
+                                Media Post, Vector design</span><br>
+                        </div>
+                        <hr class="mx-6 mt-3">
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Creating</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Illustrator</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">Photoshop</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  m   r-2 mb-2 maledpan bg-gray-800 text-white lowercase">#graphic</span>
+                        </div>
+
+                    </div>
+                    <!-- end graphic design 11 -->
+
+                    <!-- graphic design 12 -->
+                    <div class="grap col-span-1 bg-white">
+                        <div class="border-b-2 border-black px-6 py-2">
+                            <h4 class="text-3xl fahkwang text-pink font-bold">graphic design</h4>
+                        </div>
+                        <h2 class="text-2xl lg:text-4xl fahkwang capitalize px-6 py-4 font-bold">WAT Open house 2021
+                        </h2>
+
+                        <img src="./image/graphic/WAT.png" class="px-6">
+
+                        <!-- <p class="px-6 py-3">สติ๊กเกอร์ของ Sharp Interchange ที่ปรึกษาด้านการศึกษาครบวงจรทั้งโรงเรียนสอนภาษาอังกฤษ จัดโครงการทัศนศึกษาที่ต่างประเทศ จัดหาคุณครูชาวต่างชาติ ให้คำปรึกษาการเรียนต่อต่างประเทศ การทำวีซ่า และโครงการ Work & Travel
+                        </p> -->
+
+                        <div class="px-8">
+                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp;Social
+                                Media Post, Vector design</span><br>
+                        </div>
+                        <hr class="mx-6 mt-3">
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Creating</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Illustrator</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  m   r-2 mb-2 maledpan bg-gray-800 text-white lowercase">#graphic</span>
+                        </div>
+
+                    </div>
+                    <!-- end graphic design 12 -->
+
+                    <!-- graphic design 13 -->
+                    <div class="grap col-span-1 bg-white">
+                        <div class="border-b-2 border-black px-6 py-2">
+                            <h4 class="text-3xl fahkwang text-pink font-bold">graphic design</h4>
+                        </div>
+                        <h2 class="text-2xl lg:text-4xl fahkwang capitalize px-6 py-4 font-bold">Voucher</h2>
+
+                        <img src="./image/graphic/voucher.png" class="px-6">
+
+                        <!-- <p class="px-6 py-3">สติ๊กเกอร์ของ Sharp Interchange ที่ปรึกษาด้านการศึกษาครบวงจรทั้งโรงเรียนสอนภาษาอังกฤษ จัดโครงการทัศนศึกษาที่ต่างประเทศ จัดหาคุณครูชาวต่างชาติ ให้คำปรึกษาการเรียนต่อต่างประเทศ การทำวีซ่า และโครงการ Work & Travel
+                        </p> -->
+
+                        <div class="px-8">
+                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp;Voucher
+                                Design</span><br>
+                        </div>
+                        <hr class="mx-6 mt-3">
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Creating</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Illustrator</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  m   r-2 mb-2 maledpan bg-gray-800 text-white lowercase">#graphic</span>
+                        </div>
+
+                    </div>
+                    <!-- end graphic design 13 -->
+
+                    <!-- graphic design 2 -->
+                    <div class="grap col-span-1 bg-white">
+                        <div class="border-b-2 border-black px-6 py-2">
+                            <h4 class="text-3xl fahkwang text-pink font-bold">graphic design
+                            </h4>
+                        </div>
+                        <h2 class="text-2xl lg:text-4xl fahkwang capitalize px-6 py-4 font-bold">isometric</h2>
+                        <div class="px-6"><img src="./image/graphic/sq-fb-isometic.png"></div>
+
+                        <div class="px-8">
+                            <i class="fas fa-user-edit"></i><span
+                                class="maledpan font-bold capitalize">&nbsp;illustration ,Graphic
+                                design, Vector</span><br>
+                        </div>
+                        <hr class="mx-6 mt-3">
+                        <!-- <h5 class="px-6 pt-4 font-bold uppercase fahkwang">skill</h5> -->
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Creating</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Illustrator</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">Vector</span>
+                            <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">#graphic</span>
 
                         </div>
                     </div>
                     <!-- end graphic design 2 -->
                     <!-- graphic design 1 -->
-                    <div class="col-span-1 bg-white">
+                    <div class="grap col-span-1 bg-white">
                         <div class="border-b-2 border-black px-6 py-2">
                             <h4 class="text-3xl fahkwang text-pink font-bold">graphic design</h4>
                         </div>
-                        <h2 class="text-3xl lg:text-5xl fahkwang capitalize px-6 py-4 font-bold">T-rex</h2>
+                        <h2 class="text-2xl lg:text-4xl fahkwang capitalize px-6 py-4 font-bold">T-rex</h2>
                         <div class="py-2 px-6">
                             <div class="flex flex-wrap">
                                 <div class="hidden md:block md:w-3/4">
@@ -361,29 +697,27 @@
                             <span
                                 class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Creating</span>
                             <span
-                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">Illustrator</span>
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Illustrator</span>
                             <span
-                                class="inline-block rounded-full px-4 py-1  m   r-2 mb-2 maledpan bg-gray-500 text-white lowercase">#graphic</span>
+                                class="inline-block rounded-full px-4 py-1  m   r-2 mb-2 maledpan bg-gray-800 text-white lowercase">#graphic</span>
                         </div>
-                        <!-- <iframe class="px-6 pb-6" width="620" height="340"
+                        <!-- <iframe class="px-6 pb-6 w-full h-60 lg:h-80" 
                             src="https://www.youtube.com/embed/aQejfON0Nbk" title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe> -->
                     </div>
                     <!-- end graphic design 1 -->
-                   
+
                     <!-- end graphic design -->
-
-
 
 
                     <!-- web design -->
                     <!-- web design 1 -->
-                    <div class="col-span-1 bg-white">
+                    <div class="web col-span-1 bg-white">
                         <div class="border-b-2 border-black px-6 py-2">
                             <h4 class="text-xl lg:text-3xl fahkwang text-orange font-bold">web design</h4>
                         </div>
-                        <h2 class="text-3xl lg:text-5xl fahkwang capitalize px-6 py-4 font-bold">How human begin</h2>
+                        <h2 class="text-2xl lg:text-4xl fahkwang capitalize px-6 py-4 font-bold">How human begin</h2>
                         <div class="py-2 px-6">
                             <div class="flex flex-wrap">
                                 <div class="hidden md:block md:w-3/4">
@@ -424,29 +758,31 @@
                             <span
                                 class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Teamwork</span>
                             <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Illustrator</span>
+                            <span
                                 class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">Adobe
                                 XD</span>
                             <span
                                 class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">Procreacte</span>
                             <span
                                 class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">Photoshop</span>
+
                             <span
-                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">Illustrator</span>
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">#graphic</span>
                             <span
-                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-700 text-white lowercase">#UX/UI</span>
-                            <span
-                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#graphic</span>
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#UX/UI</span>
+
 
                         </div>
 
                     </div>
                     <!-- end web design 1 -->
                     <!-- web design 2 -->
-                    <div class="col-span-1 bg-white">
+                    <div class="web col-span-1 bg-white">
                         <div class="border-b-2 border-black px-6 py-2">
                             <h4 class="text-xl lg:text-3xl fahkwang text-orange font-bold">web design</h4>
                         </div>
-                        <h2 class="text-3xl lg:text-5xl fahkwang capitalize px-6 py-4 font-bold">spaceX</h2>
+                        <h2 class="text-2xl lg:text-4xl fahkwang capitalize px-6 py-4 font-bold">spaceX</h2>
                         <img src="./image/web/E-COM/Adobe XD 12_6_2564 18_06_50.png" class="px-6">
                         <p class="px-6 py-3">โปรเจคระยะสั้น 1 สัปดาห์ เป็นส่วนหนึ่งของวิชา Full-stack Web Developer 2021
                             โดยใช้ข้อมูลของบริษัท SpaceX ข้อมูลเบื้องต้นของบริษัท ข้อมูลยาน และการปล่อยยาน<br>
@@ -471,7 +807,7 @@
                             <span
                                 class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-400 text-white lowercase">react</span>
                             <span
-                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-700 text-white lowercase">#UX/UI</span>
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#UX/UI</span>
                             <span
                                 class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#front-end</span>
                             <span
@@ -481,11 +817,11 @@
                     </div>
                     <!-- end web design 2 -->
                     <!-- web design 3 -->
-                    <div class="col-span-1 bg-white">
+                    <div class="web col-span-1 bg-white">
                         <div class="border-b-2 border-black px-6 py-2">
                             <h4 class="text-xl lg:text-3xl fahkwang text-orange font-bold">web design</h4>
                         </div>
-                        <h2 class="text-3xl lg:text-5xl fahkwang capitalize px-6 py-4 font-bold">khaoyai through time
+                        <h2 class="text-2xl lg:text-4xl fahkwang capitalize px-6 py-4 font-bold">khaoyai through time
                         </h2>
                         <img src="./image/web/khao2.gif" class="px-6">
                         <p class="px-6 py-3">โปรเจคนี้เป็นส่วนหนึ่งของวิชา Multimedia Programming 2020
@@ -520,11 +856,11 @@
                     </div>
                     <!-- end web design 3 -->
                     <!-- web design 4 -->
-                    <div class="col-span-1 bg-white">
+                    <div class="web col-span-1 bg-white">
                         <div class="border-b-2 border-black px-6 py-2">
                             <h4 class="text-xl lg:text-3xl fahkwang text-orange font-bold">web design</h4>
                         </div>
-                        <h2 class="text-3xl lg:text-5xl fahkwang capitalize px-6 py-4 font-bold">Marketry</h2>
+                        <h2 class="text-2xl lg:text-4xl fahkwang capitalize px-6 py-4 font-bold">Marketry</h2>
                         <img src="./image/web/E-COM/Adobe XD 12_6_2564 18_09_16.png" class="px-6">
                         <p class="px-6 py-3">โปรเจคระยะสั้น 2 สัปดาห์ เป็นส่วนหนึ่งของวิชา Full-stack Web Developer 2021
                             ในการพัฒนาเว็บแอป E-commerce
@@ -560,11 +896,11 @@
                     </div>
                     <!-- end web design 4 -->
                     <!-- web design 5 -->
-                    <div class="col-span-1 bg-white">
+                    <div class="web col-span-1 bg-white">
                         <div class="border-b-2 border-black px-6 py-2">
                             <h4 class="text-xl lg:text-3xl fahkwang text-orange font-bold">web design</h4>
                         </div>
-                        <h2 class="text-3xl lg:text-5xl fahkwang capitalize px-6 py-4 font-bold">kiddi</h2>
+                        <h2 class="text-2xl lg:text-4xl fahkwang capitalize px-6 py-4 font-bold">kiddi</h2>
                         <img src="./image/web/kiddi.gif" class="px-6">
                         <p class="px-6 py-3">โปรเจคนี้เป็นส่วนหนึ่งของวิชา Web design and development 2021
                             ที่ให้เลือกผลิตภัณฑ์หรือบริการสําหรับนํามาจัดทําเป็นเว็บไซต์
@@ -609,16 +945,17 @@
 
 
                     <!-- gra + vid -->
-                     <!-- graphic design 2 -->
-                     <div class="col-span-1 bg-white">
+                    <!-- design 2 -->
+                    <div class="video col-span-1 bg-white">
                         <div class="border-b-2 border-black px-6 py-2">
-                            <h4 class="text-3xl fahkwang text-pink font-bold">graphic design <span
-                                    class="text-3xl fahkwang text-black font-bold">&nbsp;&&nbsp;</span>
+                            <h4 class="text-3xl fahkwang text-pink font-bold">
+                                <!-- graphic design <span
+                                    class="text-3xl fahkwang text-black font-bold">&nbsp;&&nbsp;</span> -->
                                 <span class="text-3xl fahkwang text-yellow font-bold">video editor</span>
                             </h4>
                         </div>
-                        <h2 class="text-3xl lg:text-5xl fahkwang capitalize px-6 py-4 font-bold">fairy topia</h2>
-                        <iframe class="px-6" width="620" height="340" src="https://www.youtube.com/embed/794CeWZ1Xc0"
+                        <h2 class="text-2xl lg:text-4xl fahkwang capitalize px-6 py-4 font-bold">fairy topia</h2>
+                        <iframe class="px-6 w-full h-60 lg:h-80"  src="https://www.youtube.com/embed/794CeWZ1Xc0"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
@@ -631,8 +968,8 @@
                             ภายในเกาะมีทะเลสาบ พืชพันธุ์ ดอกไม้นานาชนิด
                         </p>
                         <div class="px-8">
-                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp;Poster
-                                design, Video editor</span><br>
+                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp; Video
+                                editor, Game map Design</span><br>
                             <i class="fas fa-link text-gray-400">&nbsp;</i>
                             <a class="text-blue hover:text-black hover:underline"
                                 href="https://drive.google.com/file/d/1MED-7IhC9Dbty2F0Il5bE4B8HPb8e6an/view?usp=sharing"
@@ -643,38 +980,39 @@
                         <div class="px-6 pt-4 pb-2">
                             <span
                                 class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Creating</span>
-                            <span
-                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">Photoshop</span>
+                            <!-- <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">Photoshop</span> -->
                             <span
                                 class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">premiere
                                 pro</span>
-                            <span
-                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#graphic</span>
+                            <!-- <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">#graphic</span> -->
                             <span
                                 class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#video</span>
 
                         </div>
 
-                        <div class="px-3"><img src="./image/graphic/Fairy topia!.png"></div>
+                        <!-- <div class="px-3"><img src="./image/graphic/Fairy topia!.png"></div> -->
                     </div>
-                    <!-- end graphic design 2 -->
-                    <!-- graphic design 3 -->
-                    <div class="col-span-1 bg-white">
+                    <!-- end design 2 -->
+                    <!-- design 3 -->
+                    <div class="video col-span-1 bg-white">
                         <div class="border-b-2 border-black px-6 py-2">
-                            <h4 class="text-3xl fahkwang text-pink font-bold">graphic design <span
-                                    class="text-3xl fahkwang text-black font-bold">&nbsp;&&nbsp;</span>
+                            <h4 class="text-3xl fahkwang text-pink font-bold">
+                                <!-- graphic design <span
+                                    class="text-3xl fahkwang text-black font-bold">&nbsp;&&nbsp;</span> -->
                                 <span class="text-3xl fahkwang text-yellow font-bold">video editor</span>
                             </h4>
                         </div>
-                        <h2 class="text-3xl lg:text-5xl fahkwang capitalize px-6 py-4 font-bold">This City Won't Be
+                        <h2 class="text-2xl lg:text-4xl fahkwang capitalize px-6 py-4 font-bold">This City Won't Be
                             Lonely Anymore
                         </h2>
-                        <!-- <video class="px-6" width="620" height="340" controls>
+                        <!-- <video class="px-6 w-full h-60 lg:h-80"  controls>
                             <source src="./image/61070243_VideoDemo.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video> -->
 
-                        <iframe class="px-6" width="620" height="340" src="https://www.youtube.com/embed/S23DZUmRcJY"
+                        <iframe class="px-6 w-full h-60 lg:h-80"  src="https://www.youtube.com/embed/S23DZUmRcJY"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
@@ -685,8 +1023,8 @@
                             หลัก “Heart Attact” ในงานมีการแสดงโชว์สุดพิเศษของนักแสดงชื่อดัง “Shinbi”
                         </p>
                         <div class="px-8">
-                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp;Poster
-                                design, Video editor</span><br>
+                            <i class="fas fa-user-edit"></i><span class="maledpan font-bold capitalize">&nbsp;Video
+                                editor, VFX Design</span><br>
                             <i class="fas fa-link text-gray-400">&nbsp;</i>
                             <a class="text-blue hover:text-black hover:underline lowercase"
                                 href="https://docs.google.com/document/d/1bgp2WIfEVHmLZKI-TqX3gd7l_ciZVDMTYY7v0z0xK80/edit?usp=sharing"
@@ -698,18 +1036,18 @@
                         <div class="px-6 pt-4 pb-2">
                             <span
                                 class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-black text-white lowercase">Creating</span>
-                            <span
-                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">Photoshop</span>
+                            <!-- <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">Photoshop</span> -->
                             <span
                                 class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">premiere
                                 pro</span>
-                            <span
-                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#graphic</span>
+                            <!-- <span
+                                class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-800 text-white lowercase">#graphic</span> -->
                             <span
                                 class="inline-block rounded-full px-4 py-1  mr-2 mb-2 maledpan bg-gray-500 text-white lowercase">#video</span>
                         </div>
 
-                        <div class="px-3"><img src="./image/graphic/tcwbla.png"></div>
+                        <!-- <div class="px-3"><img src="./image/graphic/tcwbla.png"></div> -->
                     </div>
                     <!-- end graphic design 3 -->
                     <!-- end gra + vid -->
@@ -719,9 +1057,30 @@
 
 
         </div>
-
+        
+        <div class="toTop ">
+            <!-- <img class="w-12 max-h-12 rotate-180" src="./image/w-logo.png"> -->
+            <p class="text-3xl text-pink lg:text-white cursor-pointer bottom-8 right-8 animate-bounce fixed font-bold" href="#section1">  ↑</p>
+                <!-- <i class="fa-solid fa-arrow-up"></i> -->
+              
+        </div>
     </div>
+    
+    
+    <!-- <div class="footer">
+        <div class="icons">
+           <a href="#"><i class="fab fa-facebook"></i></a>
+           <a href="#"><i class="fab fa-linkedin"></i></a>
+           <a href="#"><i class="fab fa-instagram"></i></a>
+           <a href="#"><i class="fab fa-twitter"></i></a>
+            <p class="company-name">
+                ABC &copy; 2021, ALL Rights Reserved
+            </p>
+        </div>
+    </div> -->
 </body>
+        
+
 <script>
     AOS.init();
 </script>
