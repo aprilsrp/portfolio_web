@@ -24,6 +24,7 @@ body{
     background-color: black;
     font-family: 'Bai Jamjuree', sans-serif;
     padding-bottom: 5rem;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -194,4 +195,3 @@ p{
     font-size: 50%;
     }
 }     */
-
