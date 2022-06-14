@@ -143,10 +143,12 @@ body{
   } */
 li{
   list-style: none;}
-.mynavber{
-    width: 100vw;
-    height: 2rem;
-    background-color: #FB1383;
+div #mynavber{
+    background-color: #0002 !important;
+    width: 100%;
+    display: grid;
+    position: fixed;
+
 }  
 
 .space{
@@ -157,6 +159,12 @@ li{
 p{
     font-family: 'Bai Jamjuree', sans-serif !important;
 }
+
+#footer{
+    bottom: 0 !important;
+}
+
+
 
 /* .footer{
     position: fixed;
@@ -195,3 +203,8 @@ p{
     font-size: 50%;
     }
 }     */
+
+/* .toTop{
+    display: none;
+    position:fixed;
+} */
