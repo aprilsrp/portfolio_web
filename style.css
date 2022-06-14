@@ -1,28 +1,14 @@
-@font-face {
-	font-family: "Maledpan";
-	src: url('https://www.jabont.com/jayss/fonts/maledpan/maledpan.woff2') format('woff2');
-	font-weight: 500;
-}
-@font-face {
-	font-family: "Maledpan";
-	src: url('https://www.jabont.com/jayss/fonts/maledpan/maledpan-bold.woff2') format('woff2');
-	font-weight: 700;
-}
-.maledpan{
-	font-family: 'Maledpan',-apple-system, BlinkMacSystemFont, sans-serif !important;
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 .fahkwang{
     font-family: 'Fahkwang', sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
 
 body{
     background-color: black;
-    font-family: 'Bai Jamjuree', sans-serif;
+    font-family: 'Sarabun', sans-serif;
     padding-bottom: 5rem;
     scroll-behavior: smooth;
 }
@@ -157,7 +143,7 @@ div #mynavber{
 }
 
 p{
-    font-family: 'Bai Jamjuree', sans-serif !important;
+    font-family: 'Sarabun', sans-serif !important;
 }
 
 #footer{
